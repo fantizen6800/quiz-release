@@ -1,7 +1,7 @@
 {
-  "version": 1,
+  "version": 2,
   "updated_at": "2026-10-02",
-  "notes": "全模块远程热更新配置 (包含网页端规则、提示词、推荐模型、加速镜像源与公告)",
+  "notes": "v2 恢复项目标准默认模型配置（qwen3.5-omni-plus 与 deepseek-v4-pro）",
   "web_automation": {
     "deepseek": {
       "home_url": "https://chat.deepseek.com/",
@@ -82,8 +82,8 @@
     "secondary_solve": ""
   },
   "models": {
-    "qwen_model": "qwen-vl-max",
-    "deepseek_model": "deepseek-chat",
+    "qwen_model": "qwen3.5-omni-plus",
+    "deepseek_model": "deepseek-v4-pro",
     "secondary_model": "deepseek-v4-flash",
     "history_summary_model": "deepseek-v4-flash"
   },
