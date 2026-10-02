@@ -1,7 +1,7 @@
 {
-  "version": 3,
+  "version": 4,
   "updated_at": "2026-10-03",
-  "notes": "v3 引入网页端模型通用图片上传规则配置（支持 DeepSeek / 智谱清言 等热更新传图）",
+  "notes": "v4 正式开启 DeepSeek 网页端原图上传功能，支持回形针附件静默上传与剪贴板多模态提问",
   "web_automation": {
     "deepseek": {
       "home_url": "https://chat.deepseek.com/",
@@ -39,13 +39,19 @@
         "ds-button--disabled"
       ],
       "image_upload": {
-        "enabled": false,
-        "mode": "auto",
+        "enabled": true,
+        "mode": "custom",
         "upload_button_selectors": [
+          "button[aria-label*='附件']",
           "button[aria-label*='上传']",
           "button[aria-label*='图片']",
+          "button[aria-label*='Attach']",
           "button[aria-label*='Upload']",
           "button[aria-label*='Image']",
+          "[role='button'][aria-label*='附件']",
+          "[role='button'][aria-label*='上传']",
+          "[role='button'][aria-label*='图片']",
+          ".ds-upload-btn",
           ".upload-btn"
         ],
         "file_input_selectors": [
@@ -53,12 +59,19 @@
           "input[type='file']"
         ],
         "target_input_selectors": [
+          "textarea[name='search']",
+          "textarea[placeholder*='DeepSeek']",
           "textarea",
           "[contenteditable='true']"
         ],
-        "upload_settle_delay_ms": 1500,
-        "upload_in_progress_selectors": [],
-        "custom_upload_js": ""
+        "upload_settle_delay_ms": 2000,
+        "upload_in_progress_selectors": [
+          "[aria-busy='true']",
+          ".ds-loading",
+          ".upload-loading",
+          ".uploading-progress"
+        ],
+        "custom_upload_js": "var btn = document.querySelector(\"button[aria-label*='附件']\") || document.querySelector(\"button[aria-label*='上传']\") || document.querySelector(\"button[aria-label*='图片']\") || document.querySelector(\"button[aria-label*='Attach']\") || document.querySelector(\"button[aria-label*='Upload']\") || document.querySelector(\"[role='button'][aria-label*='附件']\") || document.querySelector(\"[role='button'][aria-label*='上传']\") || document.querySelector(\".ds-upload-btn\") || document.querySelector(\".upload-btn\"); if (btn && window.__quizWebImage) { if (window.__quizWebImage.clickWithAutoChooser(btn)) return 'uploaded'; } var target = document.querySelector(\"textarea[name='search']\") || document.querySelector(\"textarea[placeholder*='DeepSeek']\") || document.querySelector(\"textarea\") || document.querySelector(\"[contenteditable='true']\"); if (target && window.__quizWebImage) { if (window.__quizWebImage.pasteImage(target)) return 'uploaded'; } var fileInput = document.querySelector(\"input[type='file'][accept*='image']\") || document.querySelector(\"input[type='file']\"); if (fileInput && window.__quizWebImage) { if (window.__quizWebImage.uploadToFileInput(fileInput)) return 'uploaded'; } return 'missing-upload-target';"
       },
       "custom_js_patch": "",
       "custom_css_patch": ""
