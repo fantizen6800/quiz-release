@@ -1,7 +1,7 @@
 {
-  "version": 2,
-  "updated_at": "2026-10-02",
-  "notes": "v2 恢复项目标准默认模型配置（qwen3.5-omni-plus 与 deepseek-v4-pro）",
+  "version": 3,
+  "updated_at": "2026-10-03",
+  "notes": "v3 引入网页端模型通用图片上传规则配置（支持 DeepSeek / 智谱清言 等热更新传图）",
   "web_automation": {
     "deepseek": {
       "home_url": "https://chat.deepseek.com/",
@@ -38,6 +38,28 @@
       "disabled_classes": [
         "ds-button--disabled"
       ],
+      "image_upload": {
+        "enabled": false,
+        "mode": "auto",
+        "upload_button_selectors": [
+          "button[aria-label*='上传']",
+          "button[aria-label*='图片']",
+          "button[aria-label*='Upload']",
+          "button[aria-label*='Image']",
+          ".upload-btn"
+        ],
+        "file_input_selectors": [
+          "input[type='file'][accept*='image']",
+          "input[type='file']"
+        ],
+        "target_input_selectors": [
+          "textarea",
+          "[contenteditable='true']"
+        ],
+        "upload_settle_delay_ms": 1500,
+        "upload_in_progress_selectors": [],
+        "custom_upload_js": ""
+      },
       "custom_js_patch": "",
       "custom_css_patch": ""
     },
@@ -72,6 +94,28 @@
       "disabled_classes": [
         "empty"
       ],
+      "image_upload": {
+        "enabled": false,
+        "mode": "auto",
+        "upload_button_selectors": [
+          "button[aria-label*='上传']",
+          "button[aria-label*='图片']",
+          ".upload-icon",
+          ".image-upload"
+        ],
+        "file_input_selectors": [
+          "input[type='file'][accept*='image']",
+          "input[type='file']"
+        ],
+        "target_input_selectors": [
+          "#search-input-box textarea",
+          "textarea",
+          "[contenteditable='true']"
+        ],
+        "upload_settle_delay_ms": 1500,
+        "upload_in_progress_selectors": [],
+        "custom_upload_js": ""
+      },
       "custom_js_patch": "",
       "custom_css_patch": ""
     }
