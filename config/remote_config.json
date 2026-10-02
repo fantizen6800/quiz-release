@@ -1,7 +1,7 @@
 {
-  "version": 4,
+  "version": 5,
   "updated_at": "2026-10-03",
-  "notes": "v4 正式开启 DeepSeek 网页端原图上传功能，支持回形针附件静默上传与剪贴板多模态提问",
+  "notes": "v5 升级 DeepSeek 真实 DOM 选择器：附件按钮 .f02f0e25、发送按钮 ._52c986b、禁用状态 .bd74640a，全面适配纯原图直传与发送",
   "web_automation": {
     "deepseek": {
       "home_url": "https://chat.deepseek.com/",
@@ -12,6 +12,7 @@
       ],
       "input_selectors": [
         "textarea[name=\"search\"]",
+        "textarea._27c9245",
         "textarea[placeholder*=\"DeepSeek\"]",
         "textarea",
         "[contenteditable=\"true\"]"
@@ -28,50 +29,50 @@
         "button"
       ],
       "send_selectors": [
+        "div.bf38813a ._52c986b",
+        "._52c986b",
+        "div.bf38813a [role=\"button\"].ds-button--circle",
+        "[role=\"button\"].ds-button--circle",
         "[role=\"button\"].ds-button--primary.ds-button--circle",
+        "button[type=\"submit\"]",
         "button[aria-label*=\"发送\"]",
-        "[role=\"button\"][aria-label*=\"发送\"]",
-        "button[aria-label*=\"Send\"]",
-        "[role=\"button\"][aria-label*=\"Send\"]",
-        "button[type=\"submit\"]"
+        "[role=\"button\"][aria-label*=\"发送\"]"
       ],
       "disabled_classes": [
+        "bd74640a",
         "ds-button--disabled"
       ],
       "image_upload": {
         "enabled": true,
-        "mode": "custom",
+        "mode": "auto_file_chooser",
         "upload_button_selectors": [
+          ".f02f0e25",
+          "div.bf38813a .f02f0e25",
+          "div.bf38813a [role='button']:not(._52c986b)",
+          "div.bf38813a .ds-button:not(._52c986b)",
+          "div.ec4f5d61 [role='button']:not(._52c986b):not([aria-pressed])",
+          "div.bf38813a input[type='file']",
+          "input[type='file']",
           "button[aria-label*='附件']",
-          "button[aria-label*='上传']",
-          "button[aria-label*='图片']",
-          "button[aria-label*='Attach']",
-          "button[aria-label*='Upload']",
-          "button[aria-label*='Image']",
-          "[role='button'][aria-label*='附件']",
-          "[role='button'][aria-label*='上传']",
-          "[role='button'][aria-label*='图片']",
-          ".ds-upload-btn",
-          ".upload-btn"
+          "[role='button'][aria-label*='附件']"
         ],
         "file_input_selectors": [
-          "input[type='file'][accept*='image']",
-          "input[type='file']"
+          "div.bf38813a input[type='file']",
+          "input[type='file']",
+          "input[type='file'][accept*='image']"
         ],
         "target_input_selectors": [
           "textarea[name='search']",
-          "textarea[placeholder*='DeepSeek']",
+          "textarea._27c9245",
           "textarea",
           "[contenteditable='true']"
         ],
-        "upload_settle_delay_ms": 2000,
+        "upload_settle_delay_ms": 1500,
         "upload_in_progress_selectors": [
-          "[aria-busy='true']",
-          ".ds-loading",
-          ".upload-loading",
-          ".uploading-progress"
+          "._6d1b417",
+          "[aria-busy='true']"
         ],
-        "custom_upload_js": "var btn = document.querySelector(\"button[aria-label*='附件']\") || document.querySelector(\"button[aria-label*='上传']\") || document.querySelector(\"button[aria-label*='图片']\") || document.querySelector(\"button[aria-label*='Attach']\") || document.querySelector(\"button[aria-label*='Upload']\") || document.querySelector(\"[role='button'][aria-label*='附件']\") || document.querySelector(\"[role='button'][aria-label*='上传']\") || document.querySelector(\".ds-upload-btn\") || document.querySelector(\".upload-btn\"); if (btn && window.__quizWebImage) { if (window.__quizWebImage.clickWithAutoChooser(btn)) return 'uploaded'; } var target = document.querySelector(\"textarea[name='search']\") || document.querySelector(\"textarea[placeholder*='DeepSeek']\") || document.querySelector(\"textarea\") || document.querySelector(\"[contenteditable='true']\"); if (target && window.__quizWebImage) { if (window.__quizWebImage.pasteImage(target)) return 'uploaded'; } var fileInput = document.querySelector(\"input[type='file'][accept*='image']\") || document.querySelector(\"input[type='file']\"); if (fileInput && window.__quizWebImage) { if (window.__quizWebImage.uploadToFileInput(fileInput)) return 'uploaded'; } return 'missing-upload-target';"
+        "custom_upload_js": "var btn = document.querySelector('.f02f0e25') || document.querySelector('div.bf38813a [role=\"button\"]:not(._52c986b)') || document.querySelector('div.bf38813a .ds-button:not(._52c986b)') || document.querySelector('div.ec4f5d61 [role=\"button\"]:not(._52c986b):not([aria-pressed])') || document.querySelector('input[type=\"file\"]'); if (btn && window.__quizWebImage) { if (window.__quizWebImage.clickWithAutoChooser(btn)) return 'uploaded'; } return 'missing-upload-target';"
       },
       "custom_js_patch": "",
       "custom_css_patch": ""
