@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "updated_at": "2026-10-02",
+  "notes": "全模块远程热更新配置 (包含网页端规则、提示词、推荐模型、加速镜像源与公告)",
+  "web_automation": {
+    "deepseek": {
+      "home_url": "https://chat.deepseek.com/",
+      "expert_selectors": [
+        "[data-model-type=\"expert\"][role=\"radio\"]",
+        "[data-model-type=\"expert\"]",
+        "[role=\"radio\"][aria-label*=\"专家\"]"
+      ],
+      "input_selectors": [
+        "textarea[name=\"search\"]",
+        "textarea[placeholder*=\"DeepSeek\"]",
+        "textarea",
+        "[contenteditable=\"true\"]"
+      ],
+      "thinking_labels": [
+        "深度思考",
+        "DeepThink",
+        "Thinking"
+      ],
+      "thinking_toggle_selectors": [
+        "[aria-pressed]",
+        ".ds-toggle-button[aria-pressed]",
+        "[role=\"button\"]",
+        "button"
+      ],
+      "send_selectors": [
+        "[role=\"button\"].ds-button--primary.ds-button--circle",
+        "button[aria-label*=\"发送\"]",
+        "[role=\"button\"][aria-label*=\"发送\"]",
+        "button[aria-label*=\"Send\"]",
+        "[role=\"button\"][aria-label*=\"Send\"]",
+        "button[type=\"submit\"]"
+      ],
+      "disabled_classes": [
+        "ds-button--disabled"
+      ],
+      "custom_js_patch": "",
+      "custom_css_patch": ""
+    },
+    "zhipu": {
+      "home_url": "https://chatglm.cn/main/alltoolsdetail?redirect=/main/alltoolsdetail&lang=zh",
+      "expert_selectors": [
+        ".think-mode-trigger"
+      ],
+      "input_selectors": [
+        "#search-input-box textarea",
+        ".main-chat-search textarea",
+        "textarea.scroll-display-none",
+        "textarea",
+        "[contenteditable=\"true\"]"
+      ],
+      "thinking_labels": [
+        "极致",
+        "深度思考",
+        "思考"
+      ],
+      "thinking_toggle_selectors": [
+        ".think-mode-trigger"
+      ],
+      "send_selectors": [
+        ".enter.is-main-chat",
+        ".enter",
+        ".enter-icon-container",
+        "button[aria-label*=\"发送\"]",
+        "[role=\"button\"][aria-label*=\"发送\"]",
+        "button[type=\"submit\"]"
+      ],
+      "disabled_classes": [
+        "empty"
+      ],
+      "custom_js_patch": "",
+      "custom_css_patch": ""
+    }
+  },
+  "prompts": {
+    "qwen_ocr": "先判断图片中是否包含一道可作答的题目。如果不是题目，只输出“识别失败”，不得输出其他内容。\n\n如果是题目，请完整、准确地转写并整理题目，直接从题目正文开始输出。禁止添加任何前缀、标题、分类或说明，包括但不限于“这是一道……题”“题干：”“选项：”“图片描述：”“识别结果：”。\n\n将图片中的公式、图表、示意图、几何关系、标注、数据和其他必要视觉信息，用自然、简洁且足以还原题意的语言嵌入题目相应位置，使其读起来像一道完整、正常的文字题。选择题按原顺序保留选项；填空题保留空格或下划线；没有选项的题目不得自行添加选项。\n\n只输出题目本身，不要解答，不要分析，不要给出提示，不要判断题型，也不要补充与题目无关的内容。",
+    "deepseek_solve": "你是一名擅长数理的大学教授，你以自信简洁、思维敏捷著称，请你解答题目",
+    "secondary_solve": ""
+  },
+  "models": {
+    "qwen_model": "qwen-vl-max",
+    "deepseek_model": "deepseek-chat",
+    "secondary_model": "deepseek-v4-flash",
+    "history_summary_model": "deepseek-v4-flash"
+  },
+  "mirrors": {
+    "apk_download_prefixes": [
+      "https://gh-proxy.com/",
+      "https://ghproxy.net/",
+      "https://ghfast.top/"
+    ]
+  },
+  "announcement": {
+    "enabled": false,
+    "id": "",
+    "title": "",
+    "message": "",
+    "level": "info"
+  }
+}
