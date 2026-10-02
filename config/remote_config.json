@@ -1,7 +1,7 @@
 {
-  "version": 5,
+  "version": 6,
   "updated_at": "2026-10-03",
-  "notes": "v5 升级 DeepSeek 真实 DOM 选择器：附件按钮 .f02f0e25、发送按钮 ._52c986b、禁用状态 .bd74640a，全面适配纯原图直传与发送",
+  "notes": "v6 强化图片上传重试自愈机制，采用原生多模态分发策略，彻底解决初次加载未挂载 DOM 时上传失败问题",
   "web_automation": {
     "deepseek": {
       "home_url": "https://chat.deepseek.com/",
@@ -44,7 +44,7 @@
       ],
       "image_upload": {
         "enabled": true,
-        "mode": "auto_file_chooser",
+        "mode": "custom",
         "upload_button_selectors": [
           ".f02f0e25",
           "div.bf38813a .f02f0e25",
@@ -72,7 +72,7 @@
           "._6d1b417",
           "[aria-busy='true']"
         ],
-        "custom_upload_js": "var btn = document.querySelector('.f02f0e25') || document.querySelector('div.bf38813a [role=\"button\"]:not(._52c986b)') || document.querySelector('div.bf38813a .ds-button:not(._52c986b)') || document.querySelector('div.ec4f5d61 [role=\"button\"]:not(._52c986b):not([aria-pressed])') || document.querySelector('input[type=\"file\"]'); if (btn && window.__quizWebImage) { if (window.__quizWebImage.clickWithAutoChooser(btn)) return 'uploaded'; } return 'missing-upload-target';"
+        "custom_upload_js": "var hasThumb = document.querySelector('._1d5e44c, div[class*=\"withFile\"], ._77cefa5 img, .ec4f5d61 img'); if (hasThumb) return 'uploaded'; if (window.QuizWebBridge && typeof window.QuizWebBridge.prepareAutoFileChooser === 'function') { window.QuizWebBridge.prepareAutoFileChooser(); } var btn = document.querySelector('.f02f0e25') || document.querySelector('div.bf38813a [role=\"button\"]:not(._52c986b)') || document.querySelector('div.ec4f5d61 [role=\"button\"]:not(._52c986b):not([aria-pressed])'); var fi = document.querySelector('input[type=\"file\"]'); var target = btn || fi; if (!target) return 'target-not-ready'; try { target.focus(); } catch(_) {} try { target.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true, cancelable: true, view: window })); } catch(_) {} try { target.dispatchEvent(new MouseEvent('mousedown', { bubbles: true, cancelable: true, view: window })); } catch(_) {} try { target.dispatchEvent(new PointerEvent('pointerup', { bubbles: true, cancelable: true, view: window })); } catch(_) {} try { target.dispatchEvent(new MouseEvent('mouseup', { bubbles: true, cancelable: true, view: window })); } catch(_) {} try { target.click(); } catch(_) {} try { target.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, view: window })); } catch(_) {} if (fi && fi !== target) { try { fi.click(); } catch(_) {} } return 'uploaded';"
       },
       "custom_js_patch": "",
       "custom_css_patch": ""
