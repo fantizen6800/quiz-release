@@ -1,7 +1,7 @@
 {
-  "version": 8,
+  "version": 9,
   "updated_at": "2026-10-04",
-  "notes": "v8 原生触摸模拟自动点击附件按钮，打通静默选图与秒发流程，彻底解决发送失败与死锁",
+  "notes": "v9 精准适配智谱清言(GLM)真实网页上传DOM与触发接口；当前按策略保持禁用(enabled:false)，后续GLM开放视觉后支持云端秒级热更新启用",
   "web_automation": {
     "deepseek": {
       "home_url": "https://chat.deepseek.com/",
@@ -85,6 +85,7 @@
       "input_selectors": [
         "#search-input-box textarea",
         ".main-chat-search textarea",
+        ".input-box textarea",
         "textarea.scroll-display-none",
         "textarea",
         "[contenteditable=\"true\"]"
@@ -100,35 +101,58 @@
       "send_selectors": [
         ".enter.is-main-chat",
         ".enter",
+        ".enter_icon",
         ".enter-icon-container",
+        ".button-right-inner",
         "button[aria-label*=\"发送\"]",
         "[role=\"button\"][aria-label*=\"发送\"]",
         "button[type=\"submit\"]"
       ],
       "disabled_classes": [
-        "empty"
+        "empty",
+        "is-sensitive",
+        "disabled"
       ],
       "image_upload": {
         "enabled": false,
-        "mode": "auto",
+        "mode": "custom",
         "upload_button_selectors": [
+          ".button-right-imgsend",
+          ".button-right-imgsend img",
+          "input.img-input",
+          ".img-input",
+          ".search-container input[type='file']",
+          "input[type='file'][accept*='image']",
+          "input[type='file']",
+          "button[aria-label*='附件']",
           "button[aria-label*='上传']",
-          "button[aria-label*='图片']",
-          ".upload-icon",
-          ".image-upload"
+          "button[aria-label*='图片']"
         ],
         "file_input_selectors": [
+          "input.img-input",
+          ".button-right-imgsend input[type='file']",
           "input[type='file'][accept*='image']",
+          ".search-container input[type='file']",
           "input[type='file']"
         ],
         "target_input_selectors": [
           "#search-input-box textarea",
+          ".main-chat-search textarea",
+          ".input-box textarea",
+          "textarea.scroll-display-none",
           "textarea",
           "[contenteditable='true']"
         ],
-        "upload_settle_delay_ms": 1500,
-        "upload_in_progress_selectors": [],
-        "custom_upload_js": ""
+        "upload_settle_delay_ms": 1200,
+        "upload_in_progress_selectors": [
+          ".img-loading",
+          ".upload_wrap .img-loading",
+          ".upoload-container",
+          ".el-loading-mask",
+          "[aria-busy='true']",
+          ".uploading"
+        ],
+        "custom_upload_js": "var isUploading = document.querySelector('.img-loading, .upload_wrap .img-loading, [aria-busy=\"true\"], .el-loading-mask'); if (isUploading) return 'uploading'; var hasUploaded = document.querySelector('.upoload-container, .upload_wrap img:not(.img-loading)'); if (hasUploaded) return 'uploaded'; if (window.QuizWebBridge && typeof window.QuizWebBridge.prepareAutoFileChooser === 'function') { window.QuizWebBridge.prepareAutoFileChooser(); } var btn = document.querySelector('.button-right-imgsend') || document.querySelector('input.img-input') || document.querySelector('.img-input') || document.querySelector('.search-container input[type=\"file\"]') || document.querySelector('input[type=\"file\"][accept*=\"image\"]') || document.querySelector('input[type=\"file\"]'); if (!btn) return 'target-not-ready'; var rect = btn.getBoundingClientRect(); var dpr = window.devicePixelRatio || 1; var cx = rect.left + rect.width / 2; var cy = rect.top + rect.height / 2; if (window.QuizWebBridge && typeof window.QuizWebBridge.simulateClick === 'function') { window.QuizWebBridge.simulateClick(cx, cy, dpr); } try { btn.focus(); } catch(_) {} try { btn.click(); } catch(_) {} return 'click-dispatched';"
       },
       "custom_js_patch": "",
       "custom_css_patch": ""
