@@ -1,11 +1,11 @@
 {
-  "tag_name": "v1.27",
-  "version_name": "1.27",
-  "version_code": 28,
-  "name": "v1.27 原生触摸模拟自动点击附件按钮与发图流程解耦",
-  "body": "1. 采用 Android 原生硬件触摸事件（MotionEvent）模拟自动点击附件按钮，彻底突破 Chromium 对非用户手势触发文件选择器的安全限制；\n2. 网页端收到坐标即刻派发原生触摸，与 FileChooser 无缝打通，实现全自动静默选图挂载；\n3. 彻底修复图片上传阶段与发送校验之间的死锁，即使极端网络情况下发图受阻也不会阻塞文字发送；\n4. 远程配置已同步升级至 v8。",
-  "published_at": "2026-10-03T17:50:00Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v1.27/app-release.apk",
-  "apk_size": 25262045,
+  "tag_name": "v1.28",
+  "version_name": "1.28",
+  "version_code": 29,
+  "name": "v1.28 修复自动发图后未触发发送按钮问题",
+  "body": "1. 彻底移除发题流程中对文件缩略图类名的脆弱死锁检测，直接信赖 DeepSeek 发送按钮的原生禁用状态，解决选图后发送卡死/超时未点击发送问题；\n2. 精准定位 DeepSeek 核心发送按钮 `._52c986b`，并联合派发指针事件、DOM 点击与硬件原生触摸，确保 100% 触发发送；\n3. 优化直接输入与多按钮模式下的发送候选判定，杜绝发送按钮被误过滤；\n4. 适配最新网页端 DOM 结构。",
+  "published_at": "2026-10-04T02:18:00Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v1.28/app-release.apk",
+  "apk_size": 25262049,
   "apk_name": "app-release.apk"
 }
