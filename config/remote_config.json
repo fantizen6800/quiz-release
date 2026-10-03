@@ -1,7 +1,7 @@
 {
-  "version": 6,
-  "updated_at": "2026-10-03",
-  "notes": "v6 强化图片上传重试自愈机制，采用原生多模态分发策略，彻底解决初次加载未挂载 DOM 时上传失败问题",
+  "version": 7,
+  "updated_at": "2026-10-04",
+  "notes": "v7 深度优化网页图片上传与自动发送延迟，去除无效休眠，极速秒发",
   "web_automation": {
     "deepseek": {
       "home_url": "https://chat.deepseek.com/",
@@ -67,7 +67,7 @@
           "textarea",
           "[contenteditable='true']"
         ],
-        "upload_settle_delay_ms": 1500,
+        "upload_settle_delay_ms": 300,
         "upload_in_progress_selectors": [
           "._6d1b417",
           "[aria-busy='true']"
