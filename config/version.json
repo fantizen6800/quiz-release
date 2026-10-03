@@ -1,11 +1,11 @@
 {
-  "tag_name": "v1.26",
-  "version_name": "1.26",
-  "version_code": 27,
-  "name": "v1.26 深度优化网页图片秒发与自动化响应延迟",
-  "body": "1. 彻底去除网页端图片上传后多余的死等延时（从 1.5 秒降至 250ms）；\n2. 优化输入框就绪判断逻辑，打通输入完成到点击发送的时延（从 1.2 秒降至 120ms）；\n3. 增加图片缩略图就绪与上传进度校验，既保证绝不提前空发，又能做到就绪即刻秒发；\n4. 远程配置已同步升级至 v7，支持热更新生效。",
-  "published_at": "2026-10-03T16:26:20Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v1.26/app-release.apk",
+  "tag_name": "v1.27",
+  "version_name": "1.27",
+  "version_code": 28,
+  "name": "v1.27 原生触摸模拟自动点击附件按钮与发图流程解耦",
+  "body": "1. 采用 Android 原生硬件触摸事件（MotionEvent）模拟自动点击附件按钮，彻底突破 Chromium 对非用户手势触发文件选择器的安全限制；\n2. 网页端收到坐标即刻派发原生触摸，与 FileChooser 无缝打通，实现全自动静默选图挂载；\n3. 彻底修复图片上传阶段与发送校验之间的死锁，即使极端网络情况下发图受阻也不会阻塞文字发送；\n4. 远程配置已同步升级至 v8。",
+  "published_at": "2026-10-03T17:50:00Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v1.27/app-release.apk",
   "apk_size": 25262045,
   "apk_name": "app-release.apk"
 }
