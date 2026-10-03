@@ -1,7 +1,7 @@
 {
-  "version": 7,
+  "version": 8,
   "updated_at": "2026-10-04",
-  "notes": "v7 深度优化网页图片上传与自动发送延迟，去除无效休眠，极速秒发",
+  "notes": "v8 原生触摸模拟自动点击附件按钮，打通静默选图与秒发流程，彻底解决发送失败与死锁",
   "web_automation": {
     "deepseek": {
       "home_url": "https://chat.deepseek.com/",
@@ -72,7 +72,7 @@
           "._6d1b417",
           "[aria-busy='true']"
         ],
-        "custom_upload_js": "var hasThumb = document.querySelector('._1d5e44c, div[class*=\"withFile\"], ._77cefa5 img, .ec4f5d61 img'); if (hasThumb) return 'uploaded'; if (window.QuizWebBridge && typeof window.QuizWebBridge.prepareAutoFileChooser === 'function') { window.QuizWebBridge.prepareAutoFileChooser(); } var btn = document.querySelector('.f02f0e25') || document.querySelector('div.bf38813a [role=\"button\"]:not(._52c986b)') || document.querySelector('div.ec4f5d61 [role=\"button\"]:not(._52c986b):not([aria-pressed])'); var fi = document.querySelector('input[type=\"file\"]'); var target = btn || fi; if (!target) return 'target-not-ready'; try { target.focus(); } catch(_) {} try { target.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true, cancelable: true, view: window })); } catch(_) {} try { target.dispatchEvent(new MouseEvent('mousedown', { bubbles: true, cancelable: true, view: window })); } catch(_) {} try { target.dispatchEvent(new PointerEvent('pointerup', { bubbles: true, cancelable: true, view: window })); } catch(_) {} try { target.dispatchEvent(new MouseEvent('mouseup', { bubbles: true, cancelable: true, view: window })); } catch(_) {} try { target.click(); } catch(_) {} try { target.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, view: window })); } catch(_) {} if (fi && fi !== target) { try { fi.click(); } catch(_) {} } return 'uploaded';"
+        "custom_upload_js": "var hasThumb = document.querySelector('._1d5e44c, div[class*=\"withFile\"], ._77cefa5 img, .ec4f5d61 img, [class*=\"thumbnail\"], [class*=\"preview\"], [class*=\"file-item\"]'); if (hasThumb) return 'uploaded'; var isUploading = document.querySelector('._6d1b417, [aria-busy=\"true\"], [class*=\"loading\"], [class*=\"progress\"]'); if (isUploading) return 'uploading'; if (window.QuizWebBridge && typeof window.QuizWebBridge.prepareAutoFileChooser === 'function') { window.QuizWebBridge.prepareAutoFileChooser(); } var btn = document.querySelector('.f02f0e25'); if (!btn) { var toolbar = document.querySelector('.ec4f5d61') || document.querySelector('.bf38813a') || document.querySelector('.aaff8b8f'); if (toolbar) { var candidates = toolbar.querySelectorAll('[role=\"button\"], button, div[tabindex=\"0\"], .f02f0e25'); for (var i = 0; i < candidates.length; i++) { var el = candidates[i]; if (el.classList.contains('_52c986b') || el.classList.contains('ds-toggle-button') || el.hasAttribute('aria-pressed')) continue; if (el.querySelector('input[type=\"file\"]') || el.querySelector('svg')) { btn = el; break; } } } } if (!btn) btn = document.querySelector('input[type=\"file\"]'); if (!btn) return 'target-not-ready'; var rect = btn.getBoundingClientRect(); var dpr = window.devicePixelRatio || 1; var cx = rect.left + rect.width / 2; var cy = rect.top + rect.height / 2; if (window.QuizWebBridge && typeof window.QuizWebBridge.simulateClick === 'function') { window.QuizWebBridge.simulateClick(cx, cy, dpr); } try { btn.focus(); } catch(_) {} try { btn.click(); } catch(_) {} return 'click-dispatched';"
       },
       "custom_js_patch": "",
       "custom_css_patch": ""
