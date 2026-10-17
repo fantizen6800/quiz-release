@@ -1,11 +1,11 @@
 {
-  "tag_name": "v1.28",
-  "version_name": "1.28",
-  "version_code": 29,
-  "name": "v1.28 修复自动发图后未触发发送按钮问题",
-  "body": "1. 彻底移除发题流程中对文件缩略图类名的脆弱死锁检测，直接信赖 DeepSeek 发送按钮的原生禁用状态，解决选图后发送卡死/超时未点击发送问题；\n2. 精准定位 DeepSeek 核心发送按钮 `._52c986b`，并联合派发指针事件、DOM 点击与硬件原生触摸，确保 100% 触发发送；\n3. 优化直接输入与多按钮模式下的发送候选判定，杜绝发送按钮被误过滤；\n4. 适配最新网页端 DOM 结构。",
-  "published_at": "2026-10-04T02:18:00Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v1.28/app-release.apk",
-  "apk_size": 25262049,
+  "tag_name": "v1.29",
+  "version_name": "1.29",
+  "version_code": 30,
+  "name": "v1.29 搜题可靠性与在线更新修复",
+  "body": "1. 修复智谱等官方网页关闭图片上传时，搜题可能缺少有效题目的问题；照片和悬浮截图均会自动回退到 OCR。\n2. 修复取消请求后，停滞的网络连接仍占用资源的问题。\n3. 修复流式答案和推理中的空格、换行丢失。\n4. 修复后台完成后，重启应用可能丢失历史网页会话关联的问题。\n5. 修复检查更新遇到 HTTP 403、429、5xx 时无法切换镜像的问题。\n\n验证：145 项 JVM 单元测试全部通过，Release 构建、Lint、签名和版本信息核验通过。",
+  "published_at": "2026-10-17T08:46:59Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v1.29/app-release.apk",
+  "apk_size": 25262517,
   "apk_name": "app-release.apk"
 }
