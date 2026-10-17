@@ -5,7 +5,7 @@
   "name": "v2.0.0 模块化热配置大版本",
   "body": "v2.0.0 模块化热配置大版本（versionCode 31）\n\n- 悬浮窗原图分享改为配置驱动：点击、上滑、下滑分别配置目标 App、文字、提示词、窗口偏好、相册或停用。\n- 原图按钮可通过一个不超过 1 KiB 的独立加密配置切换豆包、ChatGPT、Gemini 等图片分享接收端；当前默认保留点击豆包、上滑 Gemini、下滑相册。\n- 拆分为 7 个独立加密模块，覆盖分享、搜题策略、模型、提示词、两个官方网页适配、镜像与公告。使用期间每约 30 秒自动检查，已打开悬浮窗无需重启。\n- 新增加密缓存、字段校验、独立版本、原子写入和镜像回退；无效配置继续使用上一份可用版本。\n- 升级保留个人模型和提示词；网页规则更新保留当前会话。新的原生能力与权限仍通过 APK 更新。\n- 保留 v1.29 的搜题回退、取消请求、流式文本、历史会话和在线更新可靠性修复。\n\n说明：轻量加密用于隐藏明文，不能抵御逆向；网络与镜像延迟影响实际生效时间。目标 App 的附图确认与发送行为由其自身控制。",
   "published_at": "2026-10-17T09:19:44Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/untagged-66cb54eece2f99539f60/app-release.apk",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v2.0.0/app-release.apk",
   "apk_size": 25298060,
   "apk_name": "app-release.apk",
   "apk_sha256": "813c54aba751d63015a396029c4650de386699547199282a8836f6d83f2305a9"
