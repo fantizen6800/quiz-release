@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.0.2",
-  "version_name": "3.0.2",
-  "version_code": 34,
-  "name": "v3.0.2 首页网页入口固定到底部",
-  "body": "v3.0.2 首页网页入口固定到底部\n\n- 首页“打开官方网页”固定在屏幕底部，不再随内容滚动。\n- 底部入口预留系统导航栏空间，保持原来的网页来源、图标和打开逻辑。\n- 首页页头、滚动内容和底部入口接入独立热布局，后续可通过加密配置调整区域排列。",
-  "published_at": "2026-10-18T03:54:48Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.0.2/app-release.apk",
-  "apk_size": 25451929,
+  "tag_name": "v3.0.3",
+  "version_name": "3.0.3",
+  "version_code": 35,
+  "name": "v3.0.3 网页发图能力同步",
+  "body": "v3.0.3 网页发图选项与实际能力同步\n\n- 智谱目前不支持自动上传图片，“直接发图”置灰，当前方式显示为“识别后发送”。\n- 切换回支持发图的网页时，恢复之前选择，不覆盖个人偏好。\n- 图片按钮随网页能力和搜题策略热配置更新，后续无需安装 APK 即可启用或禁用。\n- 保留简洁设置页面，不增加说明小字。",
+  "published_at": "2026-10-18T04:19:16Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.0.3/app-release.apk",
+  "apk_size": 25452689,
   "apk_name": "app-release.apk",
-  "apk_sha256": "42d943fc538375e9ca87c27d021a6ab670353aa5b145ee6e56fb99e16e69caf4"
+  "apk_sha256": "d35aaa9f07e4951b4a4cd7f69aadda9f7fa2ad2c64111c7878b6f3b64dc8b90e"
 }
