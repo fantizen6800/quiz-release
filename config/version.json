@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.0.0",
-  "version_name": "3.0.0",
-  "version_code": 32,
-  "name": "v3.0.0 网页与界面热更新",
-  "body": "v3.0.0 网页与界面热更新\n\n- 网页自动化由独立加密脚本接管，支持更新整个操作流程、按钮选择、等待重试、图片上传和发送确认；网站大改后可发布新的适配脚本。\n- 软件页面支持热更新文字、字体、颜色和布局，可替换整个组件树，也可使用 HTML/CSS/JS 新建界面并调用已有拍照、选图、搜题、历史和设置能力。\n- 保留现有默认界面、题图发给 GPT 小窗、上滑 Gemini 和下滑保存相册。\n- 使用期间约每 30 秒检查独立模块；无效更新继续使用已验证版本。照片分块传输，发送保护避免网页导航或重试时重复提交。\n\n首次安装本版以启用新的运行时。后续网页适配和界面更新无需重新安装 APK；新增 Android 系统权限、原生硬件能力或底层引擎升级仍需要安装包更新。",
-  "published_at": "2026-10-17T16:01:08Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.0.0/app-release.apk",
-  "apk_size": 25435329,
+  "tag_name": "v3.0.1",
+  "version_name": "3.0.1",
+  "version_code": 33,
+  "name": "v3.0.1 热更新状态区精简",
+  "body": "v3.0.1 热更新状态区精简\n\n- 设置页小字改为“实时热更新”。\n- 模块版本号改为两列紧凑排列，缩小行距，减少滚动空间。\n- 热更新状态区增加独立布局入口，之后可通过加密界面模块修改该区域；同步按钮继续保护个人模型和提示词设置。",
+  "published_at": "2026-10-18T03:38:07Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.0.1/app-release.apk",
+  "apk_size": 25451861,
   "apk_name": "app-release.apk",
-  "apk_sha256": "42f243c350bc0ac2a7d9b0a3855a305ff1886727cc0e222f7d0bd72b9ebb5f90"
+  "apk_sha256": "8d582997954a31eb98dd281d7614ef3b0537e3afe58f8f62c73e2c9fdf020eaa"
 }
