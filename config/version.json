@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.0.4",
-  "version_name": "3.0.4",
-  "version_code": 36,
-  "name": "v3.0.4 全窗口防截屏",
-  "body": "v3.0.4 全窗口防截屏\n\n- 所有应用页面启用系统防截屏保护，覆盖首页、设置、题图预览、答案、历史和官方网页。\n- 悬浮按钮、展开浮窗、后台答题入口与应用弹窗一并保护。\n- 录屏、投屏及最近任务预览中的本应用内容按系统安全窗口机制隐藏。\n- 截图搜题继续在隐藏自身浮层后截取底下的题目，不关闭防护标记。\n\n需安装本次客户端更新。防护范围为本应用窗口；悬浮在其他应用上时，无法禁止对方截取它自己的内容。",
-  "published_at": "2026-10-18T05:22:11Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.0.4/app-release.apk",
-  "apk_size": 25453181,
+  "tag_name": "v3.0.5",
+  "version_name": "3.0.5",
+  "version_code": 37,
+  "name": "v3.0.5 默认使用 DeepSeek 网页",
+  "body": "v3.0.5 默认使用 DeepSeek 网页\n\n- 首次使用默认 DeepSeek 网页版，优先直接发送题图，无需配置答题 API。\n- 设置页优先显示网页发送方式；直传图片时，识题和历史标题 API 配置收进“API 设置”。\n- 选择文字识别发送、暂不支持图片的网站或 API 回答时，自动显示所需 API 配置。\n- 保留原来明确选择的回答方式、密钥和网页登录状态。\n\n本次默认值和原生设置布局调整需要安装客户端更新，网页脚本和现有页面热更新能力继续可用。",
+  "published_at": "2026-10-18T16:49:45Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.0.5/app-release.apk",
+  "apk_size": 25469565,
   "apk_name": "app-release.apk",
-  "apk_sha256": "04c37df08f48f37a3c481db099930987ca0e664c84c0499d2f401274698f15bd"
+  "apk_sha256": "3a32173f8aaf57aef3029faa85646bcb45a10072999da3af225b6e402c9b6e1b"
 }
