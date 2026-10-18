@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.0.3",
-  "version_name": "3.0.3",
-  "version_code": 35,
-  "name": "v3.0.3 网页发图能力同步",
-  "body": "v3.0.3 网页发图选项与实际能力同步\n\n- 智谱目前不支持自动上传图片，“直接发图”置灰，当前方式显示为“识别后发送”。\n- 切换回支持发图的网页时，恢复之前选择，不覆盖个人偏好。\n- 图片按钮随网页能力和搜题策略热配置更新，后续无需安装 APK 即可启用或禁用。\n- 保留简洁设置页面，不增加说明小字。",
-  "published_at": "2026-10-18T04:19:16Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.0.3/app-release.apk",
-  "apk_size": 25452689,
+  "tag_name": "v3.0.4",
+  "version_name": "3.0.4",
+  "version_code": 36,
+  "name": "v3.0.4 全窗口防截屏",
+  "body": "v3.0.4 全窗口防截屏\n\n- 所有应用页面启用系统防截屏保护，覆盖首页、设置、题图预览、答案、历史和官方网页。\n- 悬浮按钮、展开浮窗、后台答题入口与应用弹窗一并保护。\n- 录屏、投屏及最近任务预览中的本应用内容按系统安全窗口机制隐藏。\n- 截图搜题继续在隐藏自身浮层后截取底下的题目，不关闭防护标记。\n\n需安装本次客户端更新。防护范围为本应用窗口；悬浮在其他应用上时，无法禁止对方截取它自己的内容。",
+  "published_at": "2026-10-18T05:22:11Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.0.4/app-release.apk",
+  "apk_size": 25453181,
   "apk_name": "app-release.apk",
-  "apk_sha256": "d35aaa9f07e4951b4a4cd7f69aadda9f7fa2ad2c64111c7878b6f3b64dc8b90e"
+  "apk_sha256": "04c37df08f48f37a3c481db099930987ca0e664c84c0499d2f401274698f15bd"
 }
