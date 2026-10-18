@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.0.1",
-  "version_name": "3.0.1",
-  "version_code": 33,
-  "name": "v3.0.1 热更新状态区精简",
-  "body": "v3.0.1 热更新状态区精简\n\n- 设置页小字改为“实时热更新”。\n- 模块版本号改为两列紧凑排列，缩小行距，减少滚动空间。\n- 热更新状态区增加独立布局入口，之后可通过加密界面模块修改该区域；同步按钮继续保护个人模型和提示词设置。",
-  "published_at": "2026-10-18T03:38:07Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.0.1/app-release.apk",
-  "apk_size": 25451861,
+  "tag_name": "v3.0.2",
+  "version_name": "3.0.2",
+  "version_code": 34,
+  "name": "v3.0.2 首页网页入口固定到底部",
+  "body": "v3.0.2 首页网页入口固定到底部\n\n- 首页“打开官方网页”固定在屏幕底部，不再随内容滚动。\n- 底部入口预留系统导航栏空间，保持原来的网页来源、图标和打开逻辑。\n- 首页页头、滚动内容和底部入口接入独立热布局，后续可通过加密配置调整区域排列。",
+  "published_at": "2026-10-18T03:54:48Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.0.2/app-release.apk",
+  "apk_size": 25451929,
   "apk_name": "app-release.apk",
-  "apk_sha256": "8d582997954a31eb98dd281d7614ef3b0537e3afe58f8f62c73e2c9fdf020eaa"
+  "apk_sha256": "42d943fc538375e9ca87c27d021a6ab670353aa5b145ee6e56fb99e16e69caf4"
 }
