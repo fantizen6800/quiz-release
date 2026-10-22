@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.0",
-  "version_name": "3.1.0",
-  "version_code": 38,
-  "name": "v3.1.0 选区多 App 分享",
-  "body": "v3.1.0 选区多 App 分享\n\n- 拍照、相册选好题目区域后，可通过“发送到 App”选择 ChatGPT、豆包、Gemini 或系统“其他 App”。\n- 发送旋转校正后的选区题图，不触发搜题或模型 API；返回后可以继续调整或发送给另一个 App。\n- 未安装或不能接收图片的目标置灰，小窗目标沿用系统支持时优先小窗的方式。\n- App 列表、排序、名称、提示词、小窗偏好与入口开关支持独立加密热更新，默认文件仅 360 字节。\n- 保留原有“确认搜题”，无效选区不会自动发送整张照片。\n\n首次使用该入口需安装本版客户端，之后调整分享目标只需更新配置文件。",
-  "published_at": "2026-10-22T09:26:57Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.0/app-release.apk",
+  "tag_name": "v3.1.1",
+  "version_name": "3.1.1",
+  "version_code": 39,
+  "name": "v3.1.1 相册分享与热更新提速",
+  "body": "v3.1.1 相册分享与热更新检查优化\n\n- 拍照和相册发送题图改用与悬浮窗一致的应用级启动方式，修正小窗分享的调用差异，保留题图、提示词及临时读取权限。\n- 手动检查与正在进行的后台检查共用结果，避免排队后再次下载全部模块。\n- 镜像卡顿时提前尝试备用来源，并优先复用已验证可用的镜像，缩短检查等待。\n- 保留约 30 秒自动检查、独立加密模块、个人配置保护与异常时使用上一版配置的行为。\n\n本次涉及客户端启动与下载逻辑，需要安装此版 APK；分享列表、网页流程和页面内容仍可独立热更新。",
+  "published_at": "2026-10-22T14:05:50Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.1/app-release.apk",
   "apk_size": 25486463,
   "apk_name": "app-release.apk",
-  "apk_sha256": "83df0359985bc630445eb0abe097f61cec3f200d28be11a04a001e237fc5afa7"
+  "apk_sha256": "32dde3fea0248bd6d072d688b67d9e2bd0da0e07a2220160e417efa0b47f28ac"
 }
