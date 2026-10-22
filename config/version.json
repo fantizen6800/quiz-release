@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.0.5",
-  "version_name": "3.0.5",
-  "version_code": 37,
-  "name": "v3.0.5 默认使用 DeepSeek 网页",
-  "body": "v3.0.5 默认使用 DeepSeek 网页\n\n- 首次使用默认 DeepSeek 网页版，优先直接发送题图，无需配置答题 API。\n- 设置页优先显示网页发送方式；直传图片时，识题和历史标题 API 配置收进“API 设置”。\n- 选择文字识别发送、暂不支持图片的网站或 API 回答时，自动显示所需 API 配置。\n- 保留原来明确选择的回答方式、密钥和网页登录状态。\n\n本次默认值和原生设置布局调整需要安装客户端更新，网页脚本和现有页面热更新能力继续可用。",
-  "published_at": "2026-10-18T16:49:45Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.0.5/app-release.apk",
-  "apk_size": 25469565,
+  "tag_name": "v3.1.0",
+  "version_name": "3.1.0",
+  "version_code": 38,
+  "name": "v3.1.0 选区多 App 分享",
+  "body": "v3.1.0 选区多 App 分享\n\n- 拍照、相册选好题目区域后，可通过“发送到 App”选择 ChatGPT、豆包、Gemini 或系统“其他 App”。\n- 发送旋转校正后的选区题图，不触发搜题或模型 API；返回后可以继续调整或发送给另一个 App。\n- 未安装或不能接收图片的目标置灰，小窗目标沿用系统支持时优先小窗的方式。\n- App 列表、排序、名称、提示词、小窗偏好与入口开关支持独立加密热更新，默认文件仅 360 字节。\n- 保留原有“确认搜题”，无效选区不会自动发送整张照片。\n\n首次使用该入口需安装本版客户端，之后调整分享目标只需更新配置文件。",
+  "published_at": "2026-10-22T09:26:57Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.0/app-release.apk",
+  "apk_size": 25486463,
   "apk_name": "app-release.apk",
-  "apk_sha256": "3a32173f8aaf57aef3029faa85646bcb45a10072999da3af225b6e402c9b6e1b"
+  "apk_sha256": "83df0359985bc630445eb0abe097f61cec3f200d28be11a04a001e237fc5afa7"
 }
