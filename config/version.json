@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.1",
-  "version_name": "3.1.1",
-  "version_code": 39,
-  "name": "v3.1.1 相册分享与热更新提速",
-  "body": "v3.1.1 相册分享与热更新检查优化\n\n- 拍照和相册发送题图改用与悬浮窗一致的应用级启动方式，修正小窗分享的调用差异，保留题图、提示词及临时读取权限。\n- 手动检查与正在进行的后台检查共用结果，避免排队后再次下载全部模块。\n- 镜像卡顿时提前尝试备用来源，并优先复用已验证可用的镜像，缩短检查等待。\n- 保留约 30 秒自动检查、独立加密模块、个人配置保护与异常时使用上一版配置的行为。\n\n本次涉及客户端启动与下载逻辑，需要安装此版 APK；分享列表、网页流程和页面内容仍可独立热更新。",
-  "published_at": "2026-10-22T14:05:50Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.1/app-release.apk",
-  "apk_size": 25486463,
+  "tag_name": "v3.1.2",
+  "version_name": "3.1.2",
+  "version_code": 40,
+  "name": "v3.1.2 轻量版本检查与网页标题",
+  "body": "v3.1.2 轻量版本检查与网页会话标题\n\n- 热更新先检查一份 155 字节的加密版本清单，无变化时跳过各模块下载，只下载有新版本的模块。\n- 保留镜像接力、检查任务复用和异常回退，清单不可用时仍可检查并获取模块修复。\n- 拍照、相册和悬浮窗的网页搜题自动读取网页 AI 会话标题，作为历史记录的小标题，无需额外总结 API。\n- 网页尚未生成有效标题时保留原记录，切换会话不会串改其他题目的标题。\n- 标题读取脚本、页面选择器和网站前后缀过滤规则均支持热更新。\n\n首次使用本次能力需要安装新版 APK，之后发布工具会自动维护加密版本清单和相应模块。",
+  "published_at": "2026-10-22T14:31:03Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.2/app-release.apk",
+  "apk_size": 25487375,
   "apk_name": "app-release.apk",
-  "apk_sha256": "32dde3fea0248bd6d072d688b67d9e2bd0da0e07a2220160e417efa0b47f28ac"
+  "apk_sha256": "f93e61e1e20a5df0d831ff9b0d2b5f1bde934019045db1684e7f267c5e06437e"
 }
