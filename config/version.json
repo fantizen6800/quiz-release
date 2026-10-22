@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.2",
-  "version_name": "3.1.2",
-  "version_code": 40,
-  "name": "v3.1.2 轻量版本检查与网页标题",
-  "body": "v3.1.2 轻量版本检查与网页会话标题\n\n- 热更新先检查一份 155 字节的加密版本清单，无变化时跳过各模块下载，只下载有新版本的模块。\n- 保留镜像接力、检查任务复用和异常回退，清单不可用时仍可检查并获取模块修复。\n- 拍照、相册和悬浮窗的网页搜题自动读取网页 AI 会话标题，作为历史记录的小标题，无需额外总结 API。\n- 网页尚未生成有效标题时保留原记录，切换会话不会串改其他题目的标题。\n- 标题读取脚本、页面选择器和网站前后缀过滤规则均支持热更新。\n\n首次使用本次能力需要安装新版 APK，之后发布工具会自动维护加密版本清单和相应模块。",
-  "published_at": "2026-10-22T14:31:03Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.2/app-release.apk",
-  "apk_size": 25487375,
+  "tag_name": "v3.1.3",
+  "version_name": "3.1.3",
+  "version_code": 41,
+  "name": "v3.1.3 热更新同步时间",
+  "body": "热更新状态现在显示上次成功同步的来源与时间，例如“上次自动更新1小时前”“上次手动更新刚刚”。\n\n每次同步成功都会刷新时间，包括没有新版本；失败时保留上次成功记录。记录可在重启后恢复，页面中的相对时间自动刷新。\n\n本次需更新 APK 以增加同步记录能力，后续文案和布局仍支持热更新。",
+  "published_at": "2026-10-22T15:57:07Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.3/app-release.apk",
+  "apk_size": 25487255,
   "apk_name": "app-release.apk",
-  "apk_sha256": "f93e61e1e20a5df0d831ff9b0d2b5f1bde934019045db1684e7f267c5e06437e"
+  "apk_sha256": "ad543b2bf07d20fd48350ceae8f1f62c8461bd90de3f83e9c46f45c694f4fb7a"
 }
