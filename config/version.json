@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.3",
-  "version_name": "3.1.3",
-  "version_code": 41,
-  "name": "v3.1.3 热更新同步时间",
-  "body": "热更新状态现在显示上次成功同步的来源与时间，例如“上次自动更新1小时前”“上次手动更新刚刚”。\n\n每次同步成功都会刷新时间，包括没有新版本；失败时保留上次成功记录。记录可在重启后恢复，页面中的相对时间自动刷新。\n\n本次需更新 APK 以增加同步记录能力，后续文案和布局仍支持热更新。",
-  "published_at": "2026-10-22T15:57:07Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.3/app-release.apk",
+  "tag_name": "v3.1.4",
+  "version_name": "3.1.4",
+  "version_code": 42,
+  "name": "v3.1.4 恢复截图和后台预览",
+  "body": "取消全局防截图，恢复多任务后台的页面预览。\n\n主页、内置 DeepSeek / 智谱网页、悬浮窗和弹窗均可正常截图，移除可能造成连续悬浮搜题黑图的窗口防截屏标记。截图仍会先隐藏悬浮界面，再获取题图。",
+  "published_at": "2026-10-23T11:41:19Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.4/app-release.apk",
   "apk_size": 25487255,
   "apk_name": "app-release.apk",
-  "apk_sha256": "ad543b2bf07d20fd48350ceae8f1f62c8461bd90de3f83e9c46f45c694f4fb7a"
+  "apk_sha256": "cad138593a6fb9b66262add95c279f0aa4c0e9fdcf391912772c08950b4cb669"
 }
