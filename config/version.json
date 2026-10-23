@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.5",
-  "version_name": "3.1.5",
-  "version_code": 43,
-  "name": "v3.1.5 自动框选保守回退",
-  "body": "悬浮自动框选会排除靠近屏幕四周的细长区域，以及完全位于底部四分之一区域的结果，避免误框底部控件；不可靠时直接进入手动框选。\n\n快速定位和细化结果采用相同检查，中部短题及从中上方延伸到下方的长题保留。筛选阈值接入独立加密热配置，后续可单独调整。\n\n本次需安装新版 APK，之后阈值调整可通过热更新生效。",
-  "published_at": "2026-10-23T12:25:23Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.5/app-release.apk",
-  "apk_size": 25487299,
+  "tag_name": "v3.1.6",
+  "version_name": "3.1.6",
+  "version_code": 44,
+  "name": "v3.1.6 悬浮搜题网页小窗",
+  "body": "悬浮搜题现在优先使用本应用的小窗打开官方 AI 网页，新题、历史会话和追问复用同一个窗口。\n\n小窗旁保留搜题浮球，截下一题前自动收起网页小窗，避免把答案页截入题图。关闭网页小窗继续保留搜题，移除主应用任务仍会停止搜题。\n\n小窗偏好可独立热更新；本次需先升级 APK。系统不接受小窗请求时，仍可正常打开网页并保留题图和会话信息。",
+  "published_at": "2026-10-23T17:21:59Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.6/app-release.apk",
+  "apk_size": 25503791,
   "apk_name": "app-release.apk",
-  "apk_sha256": "0792dcd5c177097a281d92fc36db9b04421f8e4bd9f7874040c26fd8b3dd48fa"
+  "apk_sha256": "d38da90e5e684c63d9ec2a9354753e63e8889576ac68b7484aca2005d30edc1d"
 }
