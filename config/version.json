@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.6",
-  "version_name": "3.1.6",
-  "version_code": 44,
-  "name": "v3.1.6 悬浮搜题网页小窗",
-  "body": "悬浮搜题现在优先使用本应用的小窗打开官方 AI 网页，新题、历史会话和追问复用同一个窗口。\n\n小窗旁保留搜题浮球，截下一题前自动收起网页小窗，避免把答案页截入题图。关闭网页小窗继续保留搜题，移除主应用任务仍会停止搜题。\n\n小窗偏好可独立热更新；本次需先升级 APK。系统不接受小窗请求时，仍可正常打开网页并保留题图和会话信息。",
-  "published_at": "2026-10-23T17:21:59Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.6/app-release.apk",
-  "apk_size": 25503791,
+  "tag_name": "v3.1.7",
+  "version_name": "3.1.7",
+  "version_code": 45,
+  "name": "v3.1.7 小窗与浮球拖动修复",
+  "body": "本应用网页小窗不再指定启动位置和大小，交由系统决定。\n\n修复打开或缩放网页小窗后搜题浮球拖动范围缩小的问题；浮球继续使用完整屏幕范围，截图也保持完整屏幕尺寸。\n\n保留连续提问复用同一小窗、截图前收起答案窗口、关闭小窗后继续搜题的行为。本次需升级 APK，原有热更新开关继续有效。",
+  "published_at": "2026-10-23T17:52:39Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.7/app-release.apk",
+  "apk_size": 25503795,
   "apk_name": "app-release.apk",
-  "apk_sha256": "d38da90e5e684c63d9ec2a9354753e63e8889576ac68b7484aca2005d30edc1d"
+  "apk_sha256": "9f07909e3a70929713d1a684fabcebc343fed6209b3f7577ff41d9e66b98064a"
 }
