@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.7",
-  "version_name": "3.1.7",
-  "version_code": 45,
-  "name": "v3.1.7 小窗与浮球拖动修复",
-  "body": "本应用网页小窗不再指定启动位置和大小，交由系统决定。\n\n修复打开或缩放网页小窗后搜题浮球拖动范围缩小的问题；浮球继续使用完整屏幕范围，截图也保持完整屏幕尺寸。\n\n保留连续提问复用同一小窗、截图前收起答案窗口、关闭小窗后继续搜题的行为。本次需升级 APK，原有热更新开关继续有效。",
-  "published_at": "2026-10-23T17:52:39Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.7/app-release.apk",
-  "apk_size": 25503795,
+  "tag_name": "v3.1.8",
+  "version_name": "3.1.8",
+  "version_code": 46,
+  "name": "v3.1.8 GPT 首次图片分享兼容",
+  "body": "针对 ChatGPT 完全关闭后首次分享只打开、没有带上图片的情况，新增先唤起应用、等待初始化后再投递图片的兼容流程。\n\nGPT 默认等待 1.5 秒，每次只投递一次题图，不附带文字；继续使用小窗，不指定启动位置和大小。等待时长可通过加密热配置调整，其他 App 保持原有直接分享。\n\n本次需要升级 APK，随后悬浮窗和照片分享均可使用这项能力。",
+  "published_at": "2026-10-27T10:06:05Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.8/app-release.apk",
+  "apk_size": 25503827,
   "apk_name": "app-release.apk",
-  "apk_sha256": "9f07909e3a70929713d1a684fabcebc343fed6209b3f7577ff41d9e66b98064a"
+  "apk_sha256": "2e2b30ab1619d0c7f6455921ba82e868648bd17c702b17381cb51b5ab81af2c0"
 }
