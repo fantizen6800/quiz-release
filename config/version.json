@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.12",
-  "version_name": "3.1.12",
-  "version_code": 50,
-  "name": "v3.1.12 恢复最近结果页与独立历史入口",
-  "body": "修复最近记录入口打开了历史列表的问题：\n\n- 左上角“最近记录”恢复直接打开原来的最近搜题结果页，保留题目切换、答案、题图和继续搜题。\n- 首页拍照、相册、悬浮窗操作下方恢复独立“历史记录”入口，查看全部题目、图片发送记录和原图。\n- 最近结果返回首页，历史详情返回历史列表；没有记录时显示最近结果空页面。\n\n本次修复需要安装 3.1.12，可直接覆盖现有正式版。",
-  "published_at": "2026-10-28T14:54:21Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.12/app-release.apk",
-  "apk_size": 25504759,
+  "tag_name": "v3.1.13",
+  "version_name": "3.1.13",
+  "version_code": 51,
+  "name": "v3.1.13 下载自动测速与慢速切换",
+  "body": "修复安装包下载长时间停留在慢线路的问题。\n\n- 下载开始时自动测速选择线路，持续低速或断流时自动切换。\n- 切换线路、取消后重试保留有效下载进度。\n- 显示实时下载速度、测速和切换状态。\n- 加强断点范围与安装包 SHA-256 校验，防止错误文件进入安装流程。\n- 保留主页左上角最近结果和独立历史记录入口。\n\n国内下载可使用 [加速下载](https://gh-proxy.com/https://github.com/fantizen6800/quiz-release/releases/download/v3.1.13/app-release.apk)，也可使用 [备用线路](https://ghfast.top/https://github.com/fantizen6800/quiz-release/releases/download/v3.1.13/app-release.apk)。",
+  "published_at": "2026-10-28T18:05:15Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.13/app-release.apk",
+  "apk_size": 25521143,
   "apk_name": "app-release.apk",
-  "apk_sha256": "1c79b24c7dbfe6f9ab54da359f867ca10fd23b27b50105ae7dda1f1da2dbfe60"
+  "apk_sha256": "adf463674a25b53c8ec894d0eda81f26ef6d59323d8e0a79109511165e7c3e52"
 }
