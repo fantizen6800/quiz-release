@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.8",
-  "version_name": "3.1.8",
-  "version_code": 46,
-  "name": "v3.1.8 GPT 首次图片分享兼容",
-  "body": "针对 ChatGPT 完全关闭后首次分享只打开、没有带上图片的情况，新增先唤起应用、等待初始化后再投递图片的兼容流程。\n\nGPT 默认等待 1.5 秒，每次只投递一次题图，不附带文字；继续使用小窗，不指定启动位置和大小。等待时长可通过加密热配置调整，其他 App 保持原有直接分享。\n\n本次需要升级 APK，随后悬浮窗和照片分享均可使用这项能力。",
-  "published_at": "2026-10-27T10:06:05Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.8/app-release.apk",
-  "apk_size": 25503827,
+  "tag_name": "v3.1.9",
+  "version_name": "3.1.9",
+  "version_code": 47,
+  "name": "v3.1.9 搜题交接与状态一致性修复",
+  "body": "修复本次代码审查确认的四处问题：\n\n- 网页搜题发送前先清理旧附件，避免把上次残留的图片误当成本次上传；无法清理时会提示处理，不再误发。\n- 悬浮窗网页搜题使用原分辨率选区上传，避免实际发送了缩小的预览图。\n- 修复后台旧存档覆盖新建搜题任务，导致进程重启后任务丢失的问题。\n- 取消或重新检查版本时立即停止旧请求，避免旧结果覆盖新版本信息。\n\n网页附件修复可通过热更新生效；其余修复需要升级至 3.1.9。",
+  "published_at": "2026-10-28T06:53:24Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.9/app-release.apk",
+  "apk_size": 25504719,
   "apk_name": "app-release.apk",
-  "apk_sha256": "2e2b30ab1619d0c7f6455921ba82e868648bd17c702b17381cb51b5ab81af2c0"
+  "apk_sha256": "e6bd463a2be2f43174d34f669727429d3e9b509d94f531d24a9e5820bcb6e742"
 }
