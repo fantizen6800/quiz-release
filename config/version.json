@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.9",
-  "version_name": "3.1.9",
-  "version_code": 47,
-  "name": "v3.1.9 搜题交接与状态一致性修复",
-  "body": "修复本次代码审查确认的四处问题：\n\n- 网页搜题发送前先清理旧附件，避免把上次残留的图片误当成本次上传；无法清理时会提示处理，不再误发。\n- 悬浮窗网页搜题使用原分辨率选区上传，避免实际发送了缩小的预览图。\n- 修复后台旧存档覆盖新建搜题任务，导致进程重启后任务丢失的问题。\n- 取消或重新检查版本时立即停止旧请求，避免旧结果覆盖新版本信息。\n\n网页附件修复可通过热更新生效；其余修复需要升级至 3.1.9。",
-  "published_at": "2026-10-28T06:53:24Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.9/app-release.apk",
-  "apk_size": 25504719,
+  "tag_name": "v3.1.10",
+  "version_name": "3.1.10",
+  "version_code": 48,
+  "name": "v3.1.10 首次悬浮搜题与设置修复",
+  "body": "修复悬浮搜题首次使用问题，并调整设置与浮球显示：\n\n- 修复首次点击“悬浮窗搜题”时授权引导弹窗崩溃、应用退出的问题。完成授权后正常显示悬浮图标；取消引导或拒绝必要授权后保留首页。\n- DeepSeek“旧版适配”按钮置灰并禁用，保留“直接输入”选项。\n- 悬浮按钮更贴近左右屏幕边缘，留白从约 15dp 收至 8dp，图标大小保持不变。\n\n本次修复需要升级至 3.1.10，可直接覆盖安装，无需卸载现有版本。",
+  "published_at": "2026-10-28T08:10:27Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.10/app-release.apk",
+  "apk_size": 25504715,
   "apk_name": "app-release.apk",
-  "apk_sha256": "e6bd463a2be2f43174d34f669727429d3e9b509d94f531d24a9e5820bcb6e742"
+  "apk_sha256": "f217853ac5f39ea6244342098eb5f09fa288c3f9f8e218ffe07a73fcf60303c5"
 }
