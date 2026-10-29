@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.14",
-  "version_name": "3.1.14",
-  "version_code": 52,
-  "name": "v3.1.14 历史记录与页面动效优化",
-  "body": "历史记录与页面动效的小幅优化。\n\n- 历史记录增加题图缩略图，标题与时间分层展示，长标题最多显示两行。\n- 记录较少时弹窗随内容收拢，减少大片空白；原图库改为更清晰的三列预览。\n- 首页历史入口采用浅色卡片，优化圆角、间距和按压反馈。\n- 历史分类切换、弹窗进场与尺寸变化更平滑，尊重系统关闭动画的设置。\n\n[加速下载 APK](https://gh-proxy.com/https://github.com/fantizen6800/quiz-release/releases/download/v3.1.14/app-release.apk)",
-  "published_at": "2026-10-29T03:56:21Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.14/app-release.apk",
+  "tag_name": "v3.1.15",
+  "version_name": "3.1.15",
+  "version_code": 53,
+  "name": "v3.1.15 历史窗口固定高度与留白修正",
+  "body": "修正历史记录与原图库的高度和留白。\n\n- 两个分类使用相同的固定窗口与内容区高度，切换时保持位置稳定，内容在区域内滚动。\n- 整理标题、状态和清空操作合并为紧凑一行。\n- 为数量、状态和时间设置匹配字号的行高，减少小字周围的空白。\n\n[加速下载 APK](https://gh-proxy.com/https://github.com/fantizen6800/quiz-release/releases/download/v3.1.15/app-release.apk)",
+  "published_at": "2026-10-29T04:19:24Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.15/app-release.apk",
   "apk_size": 25521143,
   "apk_name": "app-release.apk",
-  "apk_sha256": "d451092e614f847cd803591bc02b45dee04ffbf3185711974087fee4691f110e"
+  "apk_sha256": "25daeef2161a073442a9b4c872444d24208d32c1e20a93954b81af422d58ed6c"
 }
