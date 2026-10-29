@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.13",
-  "version_name": "3.1.13",
-  "version_code": 51,
-  "name": "v3.1.13 下载自动测速与慢速切换",
-  "body": "修复安装包下载长时间停留在慢线路的问题。\n\n- 下载开始时自动测速选择线路，持续低速或断流时自动切换。\n- 切换线路、取消后重试保留有效下载进度。\n- 显示实时下载速度、测速和切换状态。\n- 加强断点范围与安装包 SHA-256 校验，防止错误文件进入安装流程。\n- 保留主页左上角最近结果和独立历史记录入口。\n\n国内下载可使用 [加速下载](https://gh-proxy.com/https://github.com/fantizen6800/quiz-release/releases/download/v3.1.13/app-release.apk)，也可使用 [备用线路](https://ghfast.top/https://github.com/fantizen6800/quiz-release/releases/download/v3.1.13/app-release.apk)。",
-  "published_at": "2026-10-28T18:05:15Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.13/app-release.apk",
+  "tag_name": "v3.1.14",
+  "version_name": "3.1.14",
+  "version_code": 52,
+  "name": "v3.1.14 历史记录与页面动效优化",
+  "body": "历史记录与页面动效的小幅优化。\n\n- 历史记录增加题图缩略图，标题与时间分层展示，长标题最多显示两行。\n- 记录较少时弹窗随内容收拢，减少大片空白；原图库改为更清晰的三列预览。\n- 首页历史入口采用浅色卡片，优化圆角、间距和按压反馈。\n- 历史分类切换、弹窗进场与尺寸变化更平滑，尊重系统关闭动画的设置。\n\n[加速下载 APK](https://gh-proxy.com/https://github.com/fantizen6800/quiz-release/releases/download/v3.1.14/app-release.apk)",
+  "published_at": "2026-10-29T03:56:21Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.14/app-release.apk",
   "apk_size": 25521143,
   "apk_name": "app-release.apk",
-  "apk_sha256": "adf463674a25b53c8ec894d0eda81f26ef6d59323d8e0a79109511165e7c3e52"
+  "apk_sha256": "d451092e614f847cd803591bc02b45dee04ffbf3185711974087fee4691f110e"
 }
