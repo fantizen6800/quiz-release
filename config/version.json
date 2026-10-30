@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.19",
-  "version_name": "3.1.19",
-  "version_code": 57,
-  "name": "v3.1.19 全高网页与贴边控件",
-  "body": "网页恢复全高，修正收起按钮显示：\r\n- 移除固定应用工具栏，网页不再被下移 56dp，页面高度完整用于阅读。\r\n- 返回和“题”合并为右侧小控件，可上下拖动，避免遮住正在看的内容。\r\n- 去掉收起按钮的阴影，补足绘制边界，修正圆形/阴影被裁切成方块的问题。\r\n- 展开题图时在面板内提供返回与收起；原图仍保持大幅显示、滚动与点击放大。\r\n- 贴边控件布局接入热更新，源码工具仍可长按返回打开，旧版适配保持禁用。",
-  "published_at": "2026-10-30T12:54:34Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.19/app-release.apk",
+  "tag_name": "v3.1.20",
+  "version_name": "3.1.20",
+  "version_code": 58,
+  "name": "v3.1.20 下载恢复与系统返回调整",
+  "body": "下载恢复与网页返回调整：\r\n- 约 100KB/s 的可用镜像不再被强制切走；备用线路失败后恢复慢镜像并继续断点下载。\r\n- 下载失败的“重试”直接继续同一版本，不重新连接 GitHub 检查更新；提高弱网连接与读取容忍时间。\r\n- 返回与“题”默认在顶部留白左侧横排，展开、收起动画统一锚定左上角，不新增页面占位。\r\n- 系统返回键和返回手势直接退出网页页回到应用，不再后退网页历史；图片放大时同样适用。",
+  "published_at": "2026-10-30T13:23:54Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.20/app-release.apk",
   "apk_size": 25538191,
   "apk_name": "app-release.apk",
-  "apk_sha256": "fe33873e798d4d2d18fe5a741599617f804f35b153a5f474b96e3597399eef6a"
+  "apk_sha256": "a195034fd9ca0964f11afbae4c542bb68929f116ff3ca7148657fa42e397c5f5"
 }
