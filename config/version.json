@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.18",
-  "version_name": "3.1.18",
-  "version_code": 56,
-  "name": "v3.1.18 简洁大图阅读面板",
-  "body": "简化网页题目面板，保留大图阅读：\r\n- 改为单层白底题图面板，移除重复标题、提示和抢眼的模式按钮，顶部仅显示当前题目、发送状态和收起。\r\n- 网页增加独立工具栏，返回按钮不再漂在内容上；源码复制保留在长按返回打开的网页工具菜单中。\r\n- 题图保持宽度优先、原比例大幅展示，长图继续可滚动、点击放大。\r\n- 减轻遮罩并缩短展开/收起动画；设置页旧版适配保持禁用，修正禁用文字过浅的问题。\r\n- 新增可热更新的题目标题栏和无边框题图布局。",
-  "published_at": "2026-10-30T12:25:36Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.18/app-release.apk",
-  "apk_size": 25521719,
+  "tag_name": "v3.1.19",
+  "version_name": "3.1.19",
+  "version_code": 57,
+  "name": "v3.1.19 全高网页与贴边控件",
+  "body": "网页恢复全高，修正收起按钮显示：\r\n- 移除固定应用工具栏，网页不再被下移 56dp，页面高度完整用于阅读。\r\n- 返回和“题”合并为右侧小控件，可上下拖动，避免遮住正在看的内容。\r\n- 去掉收起按钮的阴影，补足绘制边界，修正圆形/阴影被裁切成方块的问题。\r\n- 展开题图时在面板内提供返回与收起；原图仍保持大幅显示、滚动与点击放大。\r\n- 贴边控件布局接入热更新，源码工具仍可长按返回打开，旧版适配保持禁用。",
+  "published_at": "2026-10-30T12:54:34Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.19/app-release.apk",
+  "apk_size": 25538191,
   "apk_name": "app-release.apk",
-  "apk_sha256": "47e89e4d4743fedb02eebb20f7ea238e9eeb0c6e2c0c5b36bb0d9a957d542055"
+  "apk_sha256": "fe33873e798d4d2d18fe5a741599617f804f35b153a5f474b96e3597399eef6a"
 }
