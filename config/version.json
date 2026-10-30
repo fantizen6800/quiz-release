@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.21",
-  "version_name": "3.1.21",
-  "version_code": 59,
-  "name": "v3.1.21 题目展开收起位置调整",
-  "body": "题目展开交互调整：\r\n- 展开题目后不再显示返回按钮，左侧原返回位置改为“收起”。\r\n- 同步更新题目标题栏热布局；收起后的横排控件、系统返回直接回应用及下载修复保留。",
-  "published_at": "2026-10-30T13:48:40Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.21/app-release.apk",
-  "apk_size": 25521787,
-  "apk_name": "app-release.apk",
-  "apk_sha256": "d193b55dc3f916b9e7ac1f04fa6ac08e6b0d94c48693dbd396dd1374aca7a33d"
+    "tag_name":  "v3.1.22",
+    "version_name":  "3.1.22",
+    "version_code":  60,
+    "name":  "v3.1.22 历史答案详情页显示题目标题",
+    "body":  "历史答案详情页题目标题：\n- 历史答案详情页原来的“历史答案”标签改为显示对应题目的标题（取题目摘要或题目首行，超长自动截断）。\n- 首页历史入口详情页、悬浮窗历史预览与搜题结果页历史预览同步生效；页面标题与答案区标签均显示题目标题。",
+    "published_at":  "2026-10-30T15:17:19Z",
+    "download_url":  "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.22/app-release.apk",
+    "apk_size":  25538175,
+    "apk_name":  "app-release.apk",
+    "apk_sha256":  "d5023e3d268aad6b1ef863be61656a25a01791cb90d481b488d4efb1e2966dc2"
 }
