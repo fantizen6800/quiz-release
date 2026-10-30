@@ -1,12 +1,12 @@
 {
-    "tag_name":  "v3.1.27",
-    "version_name":  "3.1.27",
-    "version_code":  65,
-    "name":  "v3.1.27 历史列表切换不再中间暗闪",
-    "body":  "历史列表改为应用内卡片呈现：\n- 列表卡片从独立 Dialog 窗口迁入应用窗口，与详情遮罩同层，切换在同一帧内完成，消除新窗口首帧延迟导致的中间暗闪。\n- 遮罩手势拦截替代窗口模态：吞掉背景手势、系统返回关闭列表，行为与原对话框一致；正常打开仍保留卡片淡入，返回仍为直接呈现。",
-    "published_at":  "2026-10-30T17:18:29Z",
-    "download_url":  "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.27/app-release.apk",
+    "tag_name":  "v3.1.28",
+    "version_name":  "3.1.28",
+    "version_code":  66,
+    "name":  "v3.1.28 历史记录长按重命名",
+    "body":  "历史记录长按重命名：\n- 历史记录列表长按任意记录即可重命名，弹窗输入自定义标题并保存。\n- 自定义标题在所有展示位置优先（列表行、详情页标题、悬浮窗历史面板），未命名时回落到模型摘要或题目原文。\n- 重命名随记录持久化保存，刷新与重启后保留。",
+    "published_at":  "2026-10-30T17:34:39Z",
+    "download_url":  "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.28/app-release.apk",
     "apk_size":  25538283,
     "apk_name":  "app-release.apk",
-    "apk_sha256":  "231a117a0dddb3c79ec1f15105cb4bd9128990b556d01d281ab697d0ad50464d"
+    "apk_sha256":  "74100d5ef488a8f32bb38e6d6c24dacf6cdd1ed6f1c15c577e7658191d230179"
 }
