@@ -1,12 +1,12 @@
 {
-    "tag_name":  "v3.1.23",
-    "version_name":  "3.1.23",
-    "version_code":  61,
-    "name":  "v3.1.23 历史详情页标题跟随题目切换",
-    "body":  "历史详情页标题跟随题目切换：\n- 历史答案详情页左右滑动或点选其他题目时，页面顶部标题同步切换为当前题目的标题。\n- 仅从历史列表进入的详情页生效；“最近搜题结果”页标题保持不变。",
-    "published_at":  "2026-10-30T15:31:52Z",
-    "download_url":  "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.23/app-release.apk",
+    "tag_name":  "v3.1.24",
+    "version_name":  "3.1.24",
+    "version_code":  62,
+    "name":  "v3.1.24 历史列表返回不再重放弹出动画",
+    "body":  "历史列表返回呈现修正：\n- 从历史答案详情页返回时，历史记录列表直接呈现，不再重放弹出入场动画，符合层级返回语义。\n- 正常从首页打开历史记录等其余入口的弹出动画保持不变。",
+    "published_at":  "2026-10-30T15:45:28Z",
+    "download_url":  "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.24/app-release.apk",
     "apk_size":  25538175,
     "apk_name":  "app-release.apk",
-    "apk_sha256":  "bfc5a9641b1087b1eb5b941892a27d353ae3a19a5487f9afb08f4695d425c0c5"
+    "apk_sha256":  "463ab07e94f238d0413431c1249a35921802630f996af048eb29a25f765d94b0"
 }
