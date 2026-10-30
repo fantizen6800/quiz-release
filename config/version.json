@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.20",
-  "version_name": "3.1.20",
-  "version_code": 58,
-  "name": "v3.1.20 下载恢复与系统返回调整",
-  "body": "下载恢复与网页返回调整：\r\n- 约 100KB/s 的可用镜像不再被强制切走；备用线路失败后恢复慢镜像并继续断点下载。\r\n- 下载失败的“重试”直接继续同一版本，不重新连接 GitHub 检查更新；提高弱网连接与读取容忍时间。\r\n- 返回与“题”默认在顶部留白左侧横排，展开、收起动画统一锚定左上角，不新增页面占位。\r\n- 系统返回键和返回手势直接退出网页页回到应用，不再后退网页历史；图片放大时同样适用。",
-  "published_at": "2026-10-30T13:23:54Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.20/app-release.apk",
-  "apk_size": 25538191,
+  "tag_name": "v3.1.21",
+  "version_name": "3.1.21",
+  "version_code": 59,
+  "name": "v3.1.21 题目展开收起位置调整",
+  "body": "题目展开交互调整：\r\n- 展开题目后不再显示返回按钮，左侧原返回位置改为“收起”。\r\n- 同步更新题目标题栏热布局；收起后的横排控件、系统返回直接回应用及下载修复保留。",
+  "published_at": "2026-10-30T13:48:40Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.21/app-release.apk",
+  "apk_size": 25521787,
   "apk_name": "app-release.apk",
-  "apk_sha256": "a195034fd9ca0964f11afbae4c542bb68929f116ff3ca7148657fa42e397c5f5"
+  "apk_sha256": "d193b55dc3f916b9e7ac1f04fa6ac08e6b0d94c48693dbd396dd1374aca7a33d"
 }
