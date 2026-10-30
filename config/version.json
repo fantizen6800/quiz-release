@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.16",
-  "version_name": "3.1.16",
-  "version_code": 54,
-  "name": "v3.1.16 不透明历史按钮与控件热布局",
-  "body": "修复最近结果页左上角历史按钮半透明的问题，并增强控件样式热更新。\r\n\r\n- 历史入口默认完全不透明，选中时使用实色浅蓝背景。\r\n- 结果页顶部按钮组、历史按钮、关闭按钮和底部操作栏接入热布局。\r\n- 后续可热改颜色、透明度、圆形/圆角/矩形、大小、边框、阴影、位置偏移及横竖排列和顺序。\r\n- 顶部控件组变高时，结果卡片自动为其留出空间。\r\n\r\n本次能力需先升级至 3.1.16，之后上述样式调整可只推送 app-interface 热配置。\r\n\r\n[加速下载 APK](https://gh-proxy.com/https://github.com/fantizen6800/quiz-release/releases/download/v3.1.16/app-release.apk)",
-  "published_at": "2026-10-29T05:45:43Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.16/app-release.apk",
-  "apk_size": 25537855,
+  "tag_name": "v3.1.17",
+  "version_name": "3.1.17",
+  "version_code": 55,
+  "name": "v3.1.17 题图充分展开与统一输入规则",
+  "body": "题目更清楚，入口规则保持一致：\r\n- 最近结果、历史答案、搜题结果和 DeepSeek 题目面板共用题图展示，按页面宽度保持原比例显示，长图可滚动，不再缩在小预览框里。\r\n- 历史和网页图片记录从题目顶部打开，不再自动滚到答案末尾。\r\n- 压缩重复标题、说明和边距，隐藏有图时无意义的“（图片题目）”占位。\r\n- DeepSeek 设置和题目面板共用模式选择，旧版适配全部置灰禁用；校准菜单不再提供旧版切换，旧设置自动回到直接输入。\r\n- 题图区域和模式选项的间距、排列继续接入热更新。",
+  "published_at": "2026-10-30T12:01:00Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.17/app-release.apk",
+  "apk_size": 25537967,
   "apk_name": "app-release.apk",
-  "apk_sha256": "6064cbe2e5420246b61d2c7817b43cabf5ec1e1c2975d9d89c66e0ceffc1304f"
+  "apk_sha256": "7134d5babc1343e34ec2cb32859b8b231a2beeb3918ce1829d99cc8380eadabc"
 }
