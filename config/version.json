@@ -1,12 +1,12 @@
 {
-    "tag_name":  "v3.1.24",
-    "version_name":  "3.1.24",
-    "version_code":  62,
-    "name":  "v3.1.24 历史列表返回不再重放弹出动画",
-    "body":  "历史列表返回呈现修正：\n- 从历史答案详情页返回时，历史记录列表直接呈现，不再重放弹出入场动画，符合层级返回语义。\n- 正常从首页打开历史记录等其余入口的弹出动画保持不变。",
-    "published_at":  "2026-10-30T15:45:28Z",
-    "download_url":  "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.24/app-release.apk",
-    "apk_size":  25538175,
+    "tag_name":  "v3.1.25",
+    "version_name":  "3.1.25",
+    "version_code":  63,
+    "name":  "v3.1.25 历史列表返回不再上滑入场",
+    "body":  "历史列表窗口动画修正：\n- Compose 对话框主题会继承 Activity 主题的窗口动画，部分 ROM 由此注入“从下往上”的对话框入场动画，导致从详情页返回时列表仍短暂上滑。\n- 应用内覆写 DialogWindowTheme / FloatingDialogWindowTheme 显式清空窗口动画，动画统一由卡片自身的淡入缩放提供；返回路径另在运行时直接清零窗口动画双保险。\n- 正常打开历史列表仍保留卡片弹出动画；更新弹窗等其余 Compose 对话框同步一致。",
+    "published_at":  "2026-10-30T16:24:57Z",
+    "download_url":  "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.25/app-release.apk",
+    "apk_size":  25538283,
     "apk_name":  "app-release.apk",
-    "apk_sha256":  "463ab07e94f238d0413431c1249a35921802630f996af048eb29a25f765d94b0"
+    "apk_sha256":  "ed78710d099bca5a30df857a3ad5c2d7d777fef9cb2abf27479a615d1a86f7bf"
 }
