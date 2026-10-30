@@ -1,12 +1,12 @@
 {
-    "tag_name":  "v3.1.29",
-    "version_name":  "3.1.29",
-    "version_code":  67,
-    "name":  "v3.1.29 历史记录列表大图改版",
-    "body":  "历史记录列表大图改版（方案 C）：\n- 记录卡片改为题目照片铺满整条作背景（Crop 裁切），底部向上渐变压暗（78%→42%→6%），标题、时间与网页对话徽章浮于图上，文字带轻微投影保证可读性。\n- 卡片高度与原列表行一致：随内容自适应，最低 78dp；解码尺寸从 180px 提升到 720px 适配大图。\n- 无照片记录以浅色底加占位图标呈现；长按重命名、打开详情、查看网页对话等交互全部不变。",
-    "published_at":  "2026-10-30T17:45:27Z",
-    "download_url":  "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.29/app-release.apk",
-    "apk_size":  25538283,
+    "tag_name":  "v3.1.30",
+    "version_name":  "3.1.30",
+    "version_code":  68,
+    "name":  "v3.1.30 网页右上角关闭按钮与展开页右上角收起",
+    "body":  "网页右上角关闭按钮与展开页右上角收起：\n- 网页左上控制胶囊的对称位置新增叉叉按钮，样式与返回按钮一致（白色胶囊、同尺寸同描边），点击关闭网页返回应用；题目面板展开期间隐藏，避免与面板头部重叠。\n- “题”展开页头部右上角新增叉叉，功能与左上角“收起”一致：热配置 app-interface 的 web-question-header 同步加右侧按钮（随热模块即时生效），原生兜底头部同步。\n- 左上控制胶囊的拖动行为不变；悬浮层改为全宽承载，左右两角各自对齐。",
+    "published_at":  "2026-10-30T18:04:10Z",
+    "download_url":  "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.30/app-release.apk",
+    "apk_size":  25538295,
     "apk_name":  "app-release.apk",
-    "apk_sha256":  "8c15c09b36df64b0e9a717b734555290a60a827ba19b65055aa561b65b085196"
+    "apk_sha256":  "f3134130da7994eece3f275063f7d37abb20d4afd9e342af2c6305f6c10eff26"
 }
