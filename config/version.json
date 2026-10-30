@@ -1,12 +1,12 @@
 {
-    "tag_name":  "v3.1.28",
-    "version_name":  "3.1.28",
-    "version_code":  66,
-    "name":  "v3.1.28 历史记录长按重命名",
-    "body":  "历史记录长按重命名：\n- 历史记录列表长按任意记录即可重命名，弹窗输入自定义标题并保存。\n- 自定义标题在所有展示位置优先（列表行、详情页标题、悬浮窗历史面板），未命名时回落到模型摘要或题目原文。\n- 重命名随记录持久化保存，刷新与重启后保留。",
-    "published_at":  "2026-10-30T17:34:39Z",
-    "download_url":  "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.28/app-release.apk",
+    "tag_name":  "v3.1.29",
+    "version_name":  "3.1.29",
+    "version_code":  67,
+    "name":  "v3.1.29 历史记录列表大图改版",
+    "body":  "历史记录列表大图改版（方案 C）：\n- 记录卡片改为题目照片铺满整条作背景（Crop 裁切），底部向上渐变压暗（78%→42%→6%），标题、时间与网页对话徽章浮于图上，文字带轻微投影保证可读性。\n- 卡片高度与原列表行一致：随内容自适应，最低 78dp；解码尺寸从 180px 提升到 720px 适配大图。\n- 无照片记录以浅色底加占位图标呈现；长按重命名、打开详情、查看网页对话等交互全部不变。",
+    "published_at":  "2026-10-30T17:45:27Z",
+    "download_url":  "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.29/app-release.apk",
     "apk_size":  25538283,
     "apk_name":  "app-release.apk",
-    "apk_sha256":  "74100d5ef488a8f32bb38e6d6c24dacf6cdd1ed6f1c15c577e7658191d230179"
+    "apk_sha256":  "8c15c09b36df64b0e9a717b734555290a60a827ba19b65055aa561b65b085196"
 }
