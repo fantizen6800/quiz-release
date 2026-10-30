@@ -1,12 +1,12 @@
 {
-    "tag_name":  "v3.1.25",
-    "version_name":  "3.1.25",
-    "version_code":  63,
-    "name":  "v3.1.25 历史列表返回不再上滑入场",
-    "body":  "历史列表窗口动画修正：\n- Compose 对话框主题会继承 Activity 主题的窗口动画，部分 ROM 由此注入“从下往上”的对话框入场动画，导致从详情页返回时列表仍短暂上滑。\n- 应用内覆写 DialogWindowTheme / FloatingDialogWindowTheme 显式清空窗口动画，动画统一由卡片自身的淡入缩放提供；返回路径另在运行时直接清零窗口动画双保险。\n- 正常打开历史列表仍保留卡片弹出动画；更新弹窗等其余 Compose 对话框同步一致。",
-    "published_at":  "2026-10-30T16:24:57Z",
-    "download_url":  "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.25/app-release.apk",
+    "tag_name":  "v3.1.26",
+    "version_name":  "3.1.26",
+    "version_code":  64,
+    "name":  "v3.1.26 历史列表与详情切换不再背景闪烁",
+    "body":  "历史列表与详情切换背景闪烁修正：\n- 列表（独立窗口压暗）与详情（应用内遮罩）互相切换时，两层压暗先后消失/淡入，缝隙处能看到背景先变亮再变暗。\n- 压暗改为首页层统一提供：历史列表打开期间首页绘制与详情一致的常驻遮罩，Dialog 窗口自身压暗关闭；从历史进入的详情页取消整层淡入，同帧直接呈现，遮罩亮度全程恒定。\n- “最近搜题结果”入口不经过窗口交接，保持原有淡入动画不变。",
+    "published_at":  "2026-10-30T16:42:49Z",
+    "download_url":  "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.26/app-release.apk",
     "apk_size":  25538283,
     "apk_name":  "app-release.apk",
-    "apk_sha256":  "ed78710d099bca5a30df857a3ad5c2d7d777fef9cb2abf27479a615d1a86f7bf"
+    "apk_sha256":  "803c7fcddf05739b7ed1e16e0320306eacf90c90760ea5a6238c1a5727265a44"
 }
