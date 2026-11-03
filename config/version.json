@@ -1,12 +1,12 @@
 {
-    "tag_name":  "v3.1.37",
-    "version_name":  "3.1.37",
-    "version_code":  75,
-    "name":  "v3.1.37 吸收连页极速截图与选区滑条",
-    "body":  "全面吸收连页超高速极简截图管线，相册全图选区支持上下滚动与右侧滑条\n- 长截图采用连页（Lianye）同款极速捕获管线：彻底剔除 200ms+ 硬延时与 ImageReader 盲目轮询；通过渲染提交纳秒时间戳过滤（hiddenAfter）配合 Channel.CONFLATED 帧就绪信号即刻响应；获取到干净硬件缓冲区的纳秒级瞬间立即恢复界面显示（onPostCapture），界面消失时间由原先的 400ms+ 骤降至 16ms~30ms（仅相当于 1~2 个显示刷新帧的微弱快门闪烁）。\n- 引入全屏 Bitmap 复用池：杜绝每次截屏分配 10MB 位图导致的频繁 GC 顿挫，内存零抖动。\n- 搜题截图响应提速：精简搜题捕获的延迟机制，使用帧信号快速对齐，全面提升日常搜题截图速度。\n- 选区全图选中支持直接拖动浏览：修复长图全选后框选手势占满全屏导致无法上下滑动的缺陷；当框选高度占满时，在图片任意区域上下滑动均可平滑滚动长图。\n- 选区界面新增右侧细滑条：在长图预览模式右侧提供精致的竖向滑条与滑块，清晰指示当前浏览进度，支持轻触跳转与按住滑块快速滚动长图。",
-    "published_at":  "2026-11-03T10:31:37Z",
-    "download_url":  "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.37/app-release.apk",
+    "tag_name":  "v3.1.38",
+    "version_name":  "3.1.38",
+    "version_code":  76,
+    "name":  "v3.1.38 修复截长图首屏静止画面超时问题",
+    "body":  "修复首屏截图静止画面超时与闪烁问题，稳固极速截图管线\n- 修复截长图首屏静止画面多次闪烁报错问题：重构帧提交栅栏（CaptureWindowFrameFence），消除无重绘请求下的二次 commit 等待超时；主动触发 invalidate 请求保证硬件绘制队列立即提交，首屏与静止画面下即刻完成窗口隐藏判定。\n- 优化极速缓冲区匹配容差：放宽 SurfaceFlinger 与 RenderThread 之间的微秒级时间戳比对容差，避免静止画面下干净帧被误判定关闭导致通道挂起，并增加超时兜底抓取，彻底杜绝“闪烁几次报错换个目标页面”。\n- 保持 16ms~30ms 极短界面隐藏时间：捕获干净屏幕瞬间立即恢复界面显示，兼顾超高捕获可靠性与极速无感体验。",
+    "published_at":  "2026-11-03T12:01:08Z",
+    "download_url":  "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.38/app-release.apk",
     "apk_size":  25603847,
     "apk_name":  "app-release.apk",
-    "apk_sha256":  "859d12639e021a4bcc5373584fd2d16fd463c3b2623226fd41740308eb5ce274"
+    "apk_sha256":  "b0baa9514c4c9d2a5761b95949f7a82e5dba9bf53e3d239f8b28b387de81ebfa"
 }
