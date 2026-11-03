@@ -1,12 +1,12 @@
 {
-    "tag_name":  "v3.1.35",
-    "version_name":  "3.1.35",
-    "version_code":  73,
-    "name":  "v3.1.35 长截图直存相册与选区支持选取全部",
-    "body":  "长截图完成直接保存相册，选区界面新增“选取全部”按钮\n- 优化长截图完成流程：长截图结束后直接保存无损PNG长图到系统相册（Pictures/Quiz），并提示“长截图已保存到相册”，不再强行打开App进入搜题流程。\n- 选区界面新增“选取全部”：在相册导入搜题与拍照选区界面右上角及操作区增加“选取全部”按钮，一键框选整张照片，方便对整页内容进行识别搜题。",
-    "published_at":  "2026-11-03T09:41:08Z",
-    "download_url":  "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.35/app-release.apk",
-    "apk_size":  25603847,
+    "tag_name":  "v3.1.36",
+    "version_name":  "3.1.36",
+    "version_code":  74,
+    "name":  "v3.1.36 截长图完全解耦搜题悬浮球",
+    "body":  "截长图独立纯净运行，彻底隔离搜题悬浮窗按钮\n- 彻底解耦截长图与搜题悬浮球：独立启动截长图时不再显示搜索悬浮球（FAB），截长图过程中所有屏幕状态刷新、解锁及折叠恢复均严格保持搜题悬浮球隐藏，彻底消除截图画面右下角出现蓝色搜题按钮的遮挡干扰。\n- 截图完成即刻退出服务：长截图保存相册或取消后，直接销毁悬浮服务与窗口，不在屏幕上遗留任何搜题悬浮球或常驻通知，主界面不再误显示“悬浮搜题运行中”。",
+    "published_at":  "2026-11-03T10:00:29Z",
+    "download_url":  "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.36/app-release.apk",
+    "apk_size":  25603843,
     "apk_name":  "app-release.apk",
-    "apk_sha256":  "715b21b455036d95c98d04947312dcbcd6a72d1ad118ff9f6843e0331432d1f6"
+    "apk_sha256":  "1fdfa78d06619adb3f7c1809bc3c1e2d025908635755e1c5a6b3917769f668a2"
 }
