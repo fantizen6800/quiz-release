@@ -1,12 +1,12 @@
 {
-    "tag_name":  "v3.1.43",
-    "version_name":  "3.1.43",
-    "version_code":  81,
-    "name":  "v3.1.43 悬浮搜题去除最后一步提示，全量提示接入热更新与静音机制",
-    "body":  "悬浮搜题去除“最后一步”吐司，全量提示接入热更新与静音机制\n- 悬浮搜题去除冗余“最后一步”提示：\n  * 启动悬浮搜题时不再弹出遮挡界面的“最后一步：允许截取题目所在屏幕”吐司提示；\n  * 通过发布 app-interface 热配置（r21）将该提示动态置空去除，现有客户端联网即自动生效。\n- 全量提示接入热更新与动态静音机制：\n  * 重构 BriefToast 基础体系：当热更新配置将提示文案置空时，直接拦截并不再弹出任何吐司组件，彻底消除空白气泡；\n  * 全应用提示统一收口：将主界面设置、DeepSeek 网页自动化、证书校验、文件选择、页面操作等散落 Toast 全部接入 BriefToast 统一调度，全应用提示均支持热更新修改或动态静音。\n- 自动化测试与工程保障：\n  * 新增热更新静音机制单元测试与 Toast 解析测试，全量单元测试与 hot-config 模块测试 100% 通过；\n  * 同步打包最新的 app-interface r21 加密配置与版本清单。",
-    "published_at":  "2026-11-04T07:16:09Z",
-    "download_url":  "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.43/app-release.apk",
-    "apk_size":  25621047,
-    "apk_name":  "app-release.apk",
-    "apk_sha256":  "fbfa93a5146e39abd8b51a74f62c532c16344525d3fa75b7735462fdc9d954d0"
+  "tag_name": "v3.1.46",
+  "version_name": "3.1.46",
+  "version_code": 84,
+  "name": "v3.1.46 本地 OCR 按需下载",
+  "body": "- 本地 OCR 提供 PP-OCRv6 small、增强识别和完整 medium 三种方案。\n- 模型从魔搭 PaddlePaddle 官方仓库按需下载。支持暂停续传，校验完成后可离线识别。\n- 在设置的「文字识别 OCR」选择方案并下载。也可进入同图对比页，一次补齐所需文件。\n- 通用安装包包含推理库。权重文件在首次使用本地 OCR 时按所选方案另行下载。",
+  "published_at": "2026-11-06T14:55:55Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.46/app-release.apk",
+  "apk_size": 113417650,
+  "apk_name": "app-release.apk",
+  "apk_sha256": "522a74acfc31603cb81c0a27f564e36ed9f176862bdaefabfc64911ab2047896"
 }
