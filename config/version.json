@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.46",
-  "version_name": "3.1.46",
-  "version_code": 84,
-  "name": "v3.1.46 本地 OCR 按需下载",
-  "body": "- 本地 OCR 提供 PP-OCRv6 small、增强识别和完整 medium 三种方案。\n- 模型从魔搭 PaddlePaddle 官方仓库按需下载。支持暂停续传，校验完成后可离线识别。\n- 在设置的「文字识别 OCR」选择方案并下载。也可进入同图对比页，一次补齐所需文件。\n- 通用安装包包含推理库。权重文件在首次使用本地 OCR 时按所选方案另行下载。",
-  "published_at": "2026-11-06T14:55:55Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.46/app-release.apk",
-  "apk_size": 113417650,
+  "tag_name": "v3.1.47",
+  "version_name": "3.1.47",
+  "version_code": 85,
+  "name": "v3.1.47 ARM64 轻量安装包",
+  "body": "- 正式安装包面向支持 `arm64-v8a` 的 Android 手机，下载体积约 27 MB。\n- 在设置的「文字识别 OCR」按需下载模型。校验完成后可离线识别。",
+  "published_at": "2026-11-06T15:00:44Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.47/app-release.apk",
+  "apk_size": 26876158,
   "apk_name": "app-release.apk",
-  "apk_sha256": "522a74acfc31603cb81c0a27f564e36ed9f176862bdaefabfc64911ab2047896"
+  "apk_sha256": "4970392d6ff23279dedf24cd8c87d64d4adb30c01b213315872c4b147734310f"
 }
