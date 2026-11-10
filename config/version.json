@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.47",
-  "version_name": "3.1.47",
-  "version_code": 85,
-  "name": "v3.1.47 ARM64 轻量安装包",
-  "body": "- 正式安装包面向支持 `arm64-v8a` 的 Android 手机，下载体积约 27 MB。\n- 在设置的「文字识别 OCR」按需下载模型。校验完成后可离线识别。",
-  "published_at": "2026-11-06T15:00:44Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.47/app-release.apk",
-  "apk_size": 26876158,
+  "tag_name": "v3.1.48",
+  "version_name": "3.1.48",
+  "version_code": 86,
+  "name": "v3.1.48 单任务与悬浮截图修复",
+  "body": "- 统一应用任务栈，最近任务中只保留一个应用页面。\n- 修复悬浮截图可能反复截到框选界面的问题。隐藏悬浮层并确认画面提交后，使用重新绑定的截图缓冲区。\n- 截屏来源不可见或截图缓冲区持续无帧时，下一次重试重新申请截屏授权。",
+  "published_at": "2026-11-10T06:45:10Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.48/app-release.apk",
+  "apk_size": 26874118,
   "apk_name": "app-release.apk",
-  "apk_sha256": "4970392d6ff23279dedf24cd8c87d64d4adb30c01b213315872c4b147734310f"
+  "apk_sha256": "392743a7c69c4332978b9c9900d4160ea878f331bd6cd5179fc61d27432c962c"
 }
