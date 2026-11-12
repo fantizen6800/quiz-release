@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.53",
-  "version_name": "3.1.53",
-  "version_code": 91,
-  "name": "v3.1.53 框选界面原地淡入",
-  "body": "- 框选界面改为布局完成后原地淡入，不再带整屏缩放，避免从右下角挤出或跳动。\n- 关闭时原地淡出，隐藏的框选层保持透明，防止窗口收缩时闪回旧画面。\n- 保留同一帧预览与发图、两秒提示及已有小窗行为。",
-  "published_at": "2026-11-12T13:39:55Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.53/app-release.apk",
-  "apk_size": 26877886,
+  "tag_name": "v3.1.54",
+  "version_name": "3.1.54",
+  "version_code": 92,
+  "name": "v3.1.54 框选窗口原位展开修复",
+  "body": "- 针对框选界面仍从右下向左上展开的问题，取消窗口展开、收起时从 1×1 到全屏的尺寸和位置切换，保持全屏原位淡入淡出。\n- 收起后窗口完全透明并释放触摸和焦点，保留浮球以及底层页面的点击和系统返回操作。\n- 保留同一帧预览与发图、两秒提示及现有答题小窗行为。此项为原生窗口修复，需要覆盖安装新版 APK。",
+  "published_at": "2026-11-12T14:04:45Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.54/app-release.apk",
+  "apk_size": 26877734,
   "apk_name": "app-release.apk",
-  "apk_sha256": "da35e63ce1f659e8b495a12933d90b753456c8324eac29741a2469bd5e8bd4fa"
+  "apk_sha256": "6cac0f5779085a6171c6d1eeb826fd1a204381bf11ad5e81685ce9c5537f7bd7"
 }
