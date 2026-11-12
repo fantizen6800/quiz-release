@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.49",
-  "version_name": "3.1.49",
-  "version_code": 87,
-  "name": "v3.1.49 恢复悬浮小窗答题",
-  "body": "- 悬浮搜题的新题、历史网页会话和追问恢复用小窗打开，复用同一个窗口，不在最近任务中增加额外卡片。\n- 系统拒绝小窗时不再自动全屏打开；若系统忽略小窗请求，会收起网页并返回题目页。\n- 保留 3.1.48 的干净截图缓冲区与失效授权恢复，下一次截图先收起答案小窗。",
-  "published_at": "2026-11-12T06:24:42Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.49/app-release.apk",
-  "apk_size": 26875430,
+  "tag_name": "v3.1.50",
+  "version_name": "3.1.50",
+  "version_code": 88,
+  "name": "v3.1.50 精简悬浮框选界面",
+  "body": "- 精简悬浮框选工具栏：移除截长图入口，搜题按钮占用剩余宽度并保持单行；截长图继续从主页进入。\n- 框选时隐藏顶部题号切换，右上角新增半透明关闭按钮，关闭当前框选并回到浮球。\n- 降低框选提示气泡的不透明度；关闭按钮与提示样式支持热更新。\n- 去掉发送进度、附件自动填充和发送成功吐司，失败与必要授权提示继续保留。",
+  "published_at": "2026-11-12T07:05:28Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.50/app-release.apk",
+  "apk_size": 26875154,
   "apk_name": "app-release.apk",
-  "apk_sha256": "a20711d4e1ba1d125a9ec023161b8e72d29b488c581da8068d08165515401abd"
+  "apk_sha256": "4c08f7e684a5e8ba92253bdf152c9ef7efd39d1bdd82116744d747a4fc09dd5f"
 }
