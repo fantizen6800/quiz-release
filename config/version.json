@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.55",
-  "version_name": "3.1.55",
-  "version_code": 93,
-  "name": "v3.1.55 悬浮窗主副发送 App 设置",
-  "body": "- 设置新增“悬浮窗发送”，可分别选择主发送（点按）和副发送（上滑）的目标 App，支持手机上已安装的图片接收应用。\n- 选择立即生效并保留至后续升级；两个按钮可独立恢复“跟随默认”，个人选择不会被热更新覆盖。\n- 共用现有图片发送、小窗和启动等待规则，保留同一帧框选发图及下滑保存到相册。",
-  "published_at": "2026-11-12T14:39:22Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.55/app-release.apk",
-  "apk_size": 26886458,
+  "tag_name": "v3.1.56",
+  "version_name": "3.1.56",
+  "version_code": 94,
+  "name": "v3.1.56 悬浮选区外观优化",
+  "body": "- 优化悬浮窗选区框：细边线配四角短折线，移除四个圆形拖点，外侧遮罩更轻。\n- 角标保留清晰的蓝白对比，选区内部保持原图；四角、四边和整框仍可拖动调整。\n- 新增独立选区视觉区域，方便后续热更新外观，沿用现有截图、裁剪和主副发送逻辑。",
+  "published_at": "2026-11-12T14:55:36Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.56/app-release.apk",
+  "apk_size": 26888886,
   "apk_name": "app-release.apk",
-  "apk_sha256": "2fef44d1be32eed057142005d539a735a7de661f75f62829b8517a369fd9c0c8"
+  "apk_sha256": "d6ddfe9022bdfef52726efefc3f12b85983bff5a266c2619006c2413c443a531"
 }
