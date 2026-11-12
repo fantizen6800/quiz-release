@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.52",
-  "version_name": "3.1.52",
-  "version_code": 90,
-  "name": "v3.1.52 框选预览与发图同帧",
-  "body": "- 框选预览、自动定位、搜题和发图改为使用同一次干净截图；底层页面滚动或更新后，发出的仍是框选时看到的内容。\n- 点击搜题、发图不再进行第二次屏幕采集，重新框选才更新截图。\n- 首次采集失败不进入空白框选；屏幕尺寸变化时清理旧选区，要求重新框选。",
-  "published_at": "2026-11-12T12:52:53Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.52/app-release.apk",
-  "apk_size": 26877010,
+  "tag_name": "v3.1.53",
+  "version_name": "3.1.53",
+  "version_code": 91,
+  "name": "v3.1.53 框选界面原地淡入",
+  "body": "- 框选界面改为布局完成后原地淡入，不再带整屏缩放，避免从右下角挤出或跳动。\n- 关闭时原地淡出，隐藏的框选层保持透明，防止窗口收缩时闪回旧画面。\n- 保留同一帧预览与发图、两秒提示及已有小窗行为。",
+  "published_at": "2026-11-12T13:39:55Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.53/app-release.apk",
+  "apk_size": 26877886,
   "apk_name": "app-release.apk",
-  "apk_sha256": "1abc8b784e35da68afaee0567cacb00430e6d5d3aeb93066171601dc87e46ca2"
+  "apk_sha256": "da35e63ce1f659e8b495a12933d90b753456c8324eac29741a2469bd5e8bd4fa"
 }
