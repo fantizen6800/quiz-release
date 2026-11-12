@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.48",
-  "version_name": "3.1.48",
-  "version_code": 86,
-  "name": "v3.1.48 单任务与悬浮截图修复",
-  "body": "- 统一应用任务栈，最近任务中只保留一个应用页面。\n- 修复悬浮截图可能反复截到框选界面的问题。隐藏悬浮层并确认画面提交后，使用重新绑定的截图缓冲区。\n- 截屏来源不可见或截图缓冲区持续无帧时，下一次重试重新申请截屏授权。",
-  "published_at": "2026-11-10T06:45:10Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.48/app-release.apk",
-  "apk_size": 26874118,
+  "tag_name": "v3.1.49",
+  "version_name": "3.1.49",
+  "version_code": 87,
+  "name": "v3.1.49 恢复悬浮小窗答题",
+  "body": "- 悬浮搜题的新题、历史网页会话和追问恢复用小窗打开，复用同一个窗口，不在最近任务中增加额外卡片。\n- 系统拒绝小窗时不再自动全屏打开；若系统忽略小窗请求，会收起网页并返回题目页。\n- 保留 3.1.48 的干净截图缓冲区与失效授权恢复，下一次截图先收起答案小窗。",
+  "published_at": "2026-11-12T06:24:42Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.49/app-release.apk",
+  "apk_size": 26875430,
   "apk_name": "app-release.apk",
-  "apk_sha256": "392743a7c69c4332978b9c9900d4160ea878f331bd6cd5179fc61d27432c962c"
+  "apk_sha256": "a20711d4e1ba1d125a9ec023161b8e72d29b488c581da8068d08165515401abd"
 }
