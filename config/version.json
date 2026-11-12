@@ -1,12 +1,12 @@
 {
-  "tag_name": "v3.1.54",
-  "version_name": "3.1.54",
-  "version_code": 92,
-  "name": "v3.1.54 框选窗口原位展开修复",
-  "body": "- 针对框选界面仍从右下向左上展开的问题，取消窗口展开、收起时从 1×1 到全屏的尺寸和位置切换，保持全屏原位淡入淡出。\n- 收起后窗口完全透明并释放触摸和焦点，保留浮球以及底层页面的点击和系统返回操作。\n- 保留同一帧预览与发图、两秒提示及现有答题小窗行为。此项为原生窗口修复，需要覆盖安装新版 APK。",
-  "published_at": "2026-11-12T14:04:45Z",
-  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.54/app-release.apk",
-  "apk_size": 26877734,
+  "tag_name": "v3.1.55",
+  "version_name": "3.1.55",
+  "version_code": 93,
+  "name": "v3.1.55 悬浮窗主副发送 App 设置",
+  "body": "- 设置新增“悬浮窗发送”，可分别选择主发送（点按）和副发送（上滑）的目标 App，支持手机上已安装的图片接收应用。\n- 选择立即生效并保留至后续升级；两个按钮可独立恢复“跟随默认”，个人选择不会被热更新覆盖。\n- 共用现有图片发送、小窗和启动等待规则，保留同一帧框选发图及下滑保存到相册。",
+  "published_at": "2026-11-12T14:39:22Z",
+  "download_url": "https://github.com/fantizen6800/quiz-release/releases/download/v3.1.55/app-release.apk",
+  "apk_size": 26886458,
   "apk_name": "app-release.apk",
-  "apk_sha256": "6cac0f5779085a6171c6d1eeb826fd1a204381bf11ad5e81685ce9c5537f7bd7"
+  "apk_sha256": "2fef44d1be32eed057142005d539a735a7de661f75f62829b8517a369fd9c0c8"
 }
